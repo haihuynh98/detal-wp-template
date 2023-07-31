@@ -48,9 +48,9 @@ get_header();
                     <div class="row">
                         <div class="col-md-6">
                             <div class="video-one-main-box">
-                                <h4>We are Certified Award Winning<br> Hospital in USA.</h4>
+                                <h4>Chúng tôi có chứng nhận quốc tế</h4>
                                 <div class="video-one-img">
-                                    <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/img-01.jpg" class="img-fluid" alt="">
+                                    <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/img-01.jpg" class="img-fluid" alt="">
                                     <div class="video-one-button-bg">
                                         <div class="video-one-play-button">
                                             <span><i class="fa fa-play"></i></span>
@@ -58,7 +58,7 @@ get_header();
                                         </div>
                                     </div>
                                     <div class="video-one-content">
-                                        watch our successfully history
+                                        Xem lịch sử thành công của chúng tôi
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@ get_header();
                                             </div>
                                             <div class="pbmit-heading">
                                                 <div class="pbmit-ihbox-heading">
-                                                    <h2 class="vc_custom_heading">Opening Hours</h2>
+                                                    <h2 class="vc_custom_heading">Giờ hoạt động</h2>
                                                 </div>
                                             </div>
                                         </div>
@@ -86,16 +86,16 @@ get_header();
                                     <div class="pbmit-timelist-wrapper">
                                         <ul class="pbmit-timelist-list">
                                             <li>
-                                                <span class="pbmit-timelist-li-title">Monday - Friday</span>
+                                                <span class="pbmit-timelist-li-title">Thứ 2 - Thứ 6</span>
                                                 <span class="pbmit-timelist-li-value">8:00am - 7:00pm</span>
                                             </li>
                                             <li>
-                                                <span class="pbmit-timelist-li-title">Saturday</span>
+                                                <span class="pbmit-timelist-li-title">Thứ 7</span>
                                                 <span class="pbmit-timelist-li-value">7:30am - 4:00pm</span>
                                             </li>
                                             <li>
-                                                <span class="pbmit-timelist-li-title">Sunday</span>
-                                                <span class="pbmit-timelist-li-value">Closed</span>
+                                                <span class="pbmit-timelist-li-title">Chủ nhật</span>
+                                                <span class="pbmit-timelist-li-value">Đóng cửa</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -116,8 +116,8 @@ get_header();
         <div class="row align-items-center">
             <div class="col-md-12 col-lg-6 ">
                 <div class="pbmit-heading-subheading">
-                    <h4 class="pbmit-subtitle">Who we are</h4>
-                    <h2 class="pbmit-title">The Dental Center National Hospital</h2>
+                    <h4 class="pbmit-subtitle">Về chúng tôi</h4>
+                    <h2 class="pbmit-title">Trung Tâm Răng Hàm Mặt Bệnh Viện Trung Ương</h2>
                     <div class="pbmit-heading-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                             incididunt ut labore t dolore magna aliqua. Ut enim ad minim veniam quis. </p>
@@ -163,9 +163,9 @@ get_header();
                                     </div>
                                     <div class="pbmit-ihbox-contents">
                                         <div class="pbmit-ihbox-heading">
-                                            <h2 class="vc_custom_heading">25 Years</h2>
+                                            <h2 class="vc_custom_heading">25 Năm</h2>
                                         </div>
-                                        <div class="pbmit-ihbox-content">of Dentist Experience </div>
+                                        <div class="pbmit-ihbox-content">kinh nghiệm chăm sóc răng miệng </div>
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +177,7 @@ get_header();
                                 <div class="pbmit-ihbox-headingicon d-flex">
                                     <div class="pbmit-ihbox-icon">
                                         <div class="pbmit-ihbox-icon-wrapper pbmit-ihbox-icon-type-image">
-                                            <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/icon/signature.jpg" class="img-fluid" alt="">
+                                            <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/icon/signature.jpg" class="img-fluid" alt="">
                                         </div>
                                     </div>
                                     <div class="pbmit-ihbox-contents">
@@ -196,7 +196,7 @@ get_header();
             </div>
             <div class="col-md-12 col-lg-6">
                 <div class="about-one-img">
-                    <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/img-02.png" class="img-fluid" alt="">
+                    <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/img-02.png" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
@@ -208,8 +208,8 @@ get_header();
 <section class="section-lgt service-section-one">
     <div class="container">
         <div class="pbmit-heading-subheading text-center">
-            <h4 class="pbmit-subtitle">OUR SERVICES</h4>
-            <h2 class="pbmit-title">What We Offer for You</h2>
+            <h4 class="pbmit-subtitle">Dịch vụ của chúng tôi</h4>
+            <h2 class="pbmit-title">Những gì chúng tôi cung cấp cho bạn</h2>
             <div class="pbmit-heading-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     incididunt ut<br> labore t dolore magna aliqua. </p>
@@ -229,14 +229,14 @@ get_header();
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">General Dentistry</a>
+                                        <a href="services-details.html">Nha khoa tổng quát</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Patient can get general treatments with single sitting.</p>
+                                        <p>Bệnh nhân có thể được điều trị chung với việc ngồi riêng.</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc thêm</a>
                                         </div>
                                     </div>
                                 </div>
@@ -256,14 +256,14 @@ get_header();
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Cosmetic Dentistry</a>
+                                        <a href="services-details.html">Nha khoa thẩm mỹ</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Cosmetic dentistry is make your teeth and smile beautiful.</p>
+                                        <p>Nha khoa thẩm mỹ là làm cho răng của bạn đẹp tự nhiên.</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc Thêm</a>
                                         </div>
                                     </div>
                                 </div>
@@ -283,14 +283,14 @@ get_header();
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Dental Implants</a>
+                                        <a href="services-details.html">Cấy ghép Răng</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Dental implants is a procedure of replacing missing teeth.</p>
+                                        <p>Cấy ghép Răng là một thủ tục thay thế răng bị mất.</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc Thêm</a>
                                         </div>
                                     </div>
                                 </div>
@@ -310,15 +310,14 @@ get_header();
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Orthodontics</a>
+                                        <a href="services-details.html">Chỉnh Hàm</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Orthodontics can correct the bite and retore balance to your
-                                            teeth.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium sunt fugit</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc Thêm</a>
                                         </div>
                                     </div>
                                 </div>
@@ -338,15 +337,14 @@ get_header();
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Teeth Whitening</a>
+                                        <a href="services-details.html">Làm trắng răng</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Laser teeth whitening procedure allows us to whiten your teeth.
-                                        </p>
+                                        <p>Quy trình làm trắng răng laser cho phép chúng tôi làm trắng răng.</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc Thêm</a>
                                         </div>
                                     </div>
                                 </div>
@@ -366,14 +364,14 @@ get_header();
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Teeth Cleaning</a>
+                                        <a href="services-details.html">Làm sạch răng</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Deep cleaning your teeth is a procedure to treat periodontal.</p>
+                                        <p>Làm sạch sâu răng của bạn là một thủ tục để điều trị nha chu.</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc Thêm</a>
                                         </div>
                                     </div>
                                 </div>
@@ -396,12 +394,11 @@ get_header();
                                         <a href="services-details.html">Paradontosis</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Paradontosis involves oral hygiene and professional teeth
-                                            cleaning.</p>
+                                        <p>Paradontosis liên quan đến vệ sinh răng miệng và làm sạch răng chuyên nghiệp.</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc Thêm</a>
                                         </div>
                                     </div>
                                 </div>
@@ -421,14 +418,14 @@ get_header();
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Cavity Protection</a>
+                                        <a href="services-details.html">Bảo vệ khoang</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Fight cavities with Crest Cavity Protection Toothpaste by us.</p>
+                                        <p>Chiến đấu với khoang với kem đánh răng bảo vệ khoang của chúng tôi.</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc Thêm</a>
                                         </div>
                                     </div>
                                 </div>
@@ -456,7 +453,7 @@ get_header();
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc Thêm</a>
                                         </div>
                                     </div>
                                 </div>
@@ -486,7 +483,7 @@ get_header();
                                     <span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="100" data-interval="5" data-before="" data-before-style="" data-after="" data-after-style="">100</span>
                                     <span class="pbmit-fid-sub"></span>
                                 </h4>
-                                <h3 class="pbmit-fid-title"><span>Dedicated Doctors<br></span></h3>
+                                <h3 class="pbmit-fid-title"><span>Bác sĩ chuyên dụng<br></span></h3>
                             </div>
                         </div>
                     </div>
@@ -634,7 +631,7 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <a href="#" class="pbmit-btn">READ MORE</a>
+                <a href="#" class="pbmit-btn">Đọc Thêm</a>
             </div>
         </div>
     </div>
@@ -669,7 +666,7 @@ get_header();
                             </div>
                             <div class="pbminfotech-box-img">
                                 <div class="pbmit-featured-wrapper">
-                                    <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/testimonail/testimonial-01.jpg" class="img-fluid" alt="">
+                                    <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/testimonail/testimonial-01.jpg" class="img-fluid" alt="">
                                 </div>
                             </div>
                             <div class="pbminfotech-box-author">
@@ -694,7 +691,7 @@ get_header();
                             </div>
                             <div class="pbminfotech-box-img">
                                 <div class="pbmit-featured-wrapper">
-                                    <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/testimonail/testimonial-02.jpg" class="img-fluid" alt="">
+                                    <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/testimonail/testimonial-02.jpg" class="img-fluid" alt="">
                                 </div>
                             </div>
                             <div class="pbminfotech-box-author">
@@ -719,7 +716,7 @@ get_header();
                             </div>
                             <div class="pbminfotech-box-img">
                                 <div class="pbmit-featured-wrapper">
-                                    <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/testimonail/testimonial-03.jpg" class="img-fluid" alt="">
+                                    <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/testimonail/testimonial-03.jpg" class="img-fluid" alt="">
                                 </div>
                             </div>
                             <div class="pbminfotech-box-author">
@@ -808,7 +805,7 @@ get_header();
                         <div class="pbmit-client-wrapper">
                             <h4 class="pbmit-hide">Client 6</h4>
                             <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/client/client-01.png" class="img-fluid" alt="">
+                                <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/client/client-01.png" class="img-fluid" alt="">
                             </div>
                         </div>
                     </article>
@@ -819,7 +816,7 @@ get_header();
                         <div class="pbmit-client-wrapper">
                             <h4 class="pbmit-hide">Client 1</h4>
                             <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/client/client-02.png" class="img-fluid" alt="">
+                                <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/client/client-02.png" class="img-fluid" alt="">
                             </div>
                         </div>
                     </article>
@@ -830,7 +827,7 @@ get_header();
                         <div class="pbmit-client-wrapper">
                             <h4 class="pbmit-hide">Client 2</h4>
                             <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/client/client-03.png" class="img-fluid" alt="">
+                                <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/client/client-03.png" class="img-fluid" alt="">
                             </div>
                         </div>
                     </article>
@@ -841,7 +838,7 @@ get_header();
                         <div class="pbmit-client-wrapper">
                             <h4 class="pbmit-hide">Client 3</h4>
                             <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/client/client-04.png" class="img-fluid" alt="">
+                                <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/client/client-04.png" class="img-fluid" alt="">
                             </div>
                         </div>
                     </article>
@@ -852,7 +849,7 @@ get_header();
                         <div class="pbmit-client-wrapper">
                             <h4 class="pbmit-hide">Client 4</h4>
                             <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/client/client-05.png" class="img-fluid" alt="">
+                                <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/client/client-05.png" class="img-fluid" alt="">
                             </div>
                         </div>
                     </article>
@@ -880,7 +877,7 @@ get_header();
                     <div class="post-item">
                         <div class="pbmit-featured-container">
                             <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/blog/blog-01.jpg" class="img-fluid" alt="">
+                                <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-01.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="pbmit-meta-category">
                                 <a href="blog-classic.html" rel="category tag">Teeth</a>
@@ -903,7 +900,7 @@ get_header();
                                         eget lacinia odio sem nec elit. Morbi leo risus, porta ac
                                         consectetur ac, vestibu lum at eros. Nulla vitae elit libero, a
                                         pharetra augue. </p>
-                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="blog-classic.html">Read More</a>
+                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="blog-classic.html">Đọc Thêm</a>
                                 </div>
                             </div>
                         </div>
@@ -915,7 +912,7 @@ get_header();
                     <div class="post-item">
                         <div class="pbmit-featured-container">
                             <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/blog/blog-02.jpg" class="img-fluid" alt="">
+                                <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-02.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="pbmit-meta-category">
                                 <a href="blog-classic.html" rel="category tag">Oral</a>
@@ -938,7 +935,7 @@ get_header();
                                         eget lacinia odio sem nec elit. Morbi leo risus, porta ac
                                         consectetur ac, vestibu lum at eros. Nulla vitae elit libero, a
                                         pharetra augue. </p>
-                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="blog-classic.html">Read More</a>
+                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="blog-classic.html">Đọc Thêm</a>
                                 </div>
                             </div>
                         </div>
@@ -950,7 +947,7 @@ get_header();
                     <div class="post-item">
                         <div class="pbmit-featured-container">
                             <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/blog/blog-03.jpg" class="img-fluid" alt="">
+                                <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-03.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="pbmit-meta-category">
                                 <a href="blog-classic.html" rel="category tag">Implants</a>
@@ -973,7 +970,7 @@ get_header();
                                         eget lacinia odio sem nec elit. Morbi leo risus, porta ac
                                         consectetur ac, vestibu lum at eros. Nulla vitae elit libero, a
                                         pharetra augue. </p>
-                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="blog-classic.html">Read More</a>
+                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="blog-classic.html">Đọc Thêm</a>
                                 </div>
                             </div>
                         </div>
