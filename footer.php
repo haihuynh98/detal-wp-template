@@ -21,13 +21,13 @@
 			<div class="row align-items-center">
 				<div class="col-md-12 col-lg-3">
 					<div class="pbmit-footer-boxes-1">
-						<img class="pbmit-footerlogo" src="<?= get_template_directory_uri()?>/assets/images/logo-white-1.png" alt="">
+						<img class="pbmit-footerlogo" src="<?= get_template_directory_uri() ?>/assets/images/logo-white-1.png" alt="">
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-6">
 					<form class="pbmit-footer-boxes-2">
-						<input type="email" name="EMAIL" placeholder="Your email address" required="">
-						<button type="submit" value="Sign up">Subscribe</button>
+						<input type="email" name="EMAIL" placeholder="Địa chỉ email của bạn" required="">
+						<button type="submit" value="Sign up">Nhận tin </button>
 					</form>
 				</div>
 				<div class="col-md-12 col-lg-3">
@@ -64,66 +64,63 @@
 			<div class="row">
 				<div class="pbmit-footer-widget-col-1">
 					<div class="widget">
-						<h2 class="widget-title">About Us</h2>
+						<h2 class="widget-title">Về chúng tôi</h2>
 						<div class="textwidget">
 							<p>Contrary to popular belief, Lorem simply random text. It has roots in a piece of
 								classical Latin literature.</p>
 						</div>
 						<div class="pbmit-contact-widget-lines">
-							<div class="pbmit-contact-widget-line pbmit-contact-widget-address">Address: 20 ,
-								New York 10010</div>
-							<div class="pbmit-contact-widget-line pbmit-contact-widget-phone">Phone: +880)
-								616481</div>
-							<div class="pbmit-contact-widget-line pbmit-contact-widget-email">Email:
-								info@yourdomain.com</div>
+							<div class="pbmit-contact-widget-line pbmit-contact-widget-address">Địa chỉ: 123 Đinh Bộ Lĩnh, P. 24, Q. Bình Thạnh, TP. Hồ Chí Minh</div>
+							<div class="pbmit-contact-widget-line pbmit-contact-widget-phone">Điện thoại: 0123-456-789</div>
+							<div class="pbmit-contact-widget-line pbmit-contact-widget-email">E-mail: info@yourdomain.com</div>
 						</div>
 					</div>
 				</div>
 				<div class="pbmit-footer-widget-col-2">
 					<div class="widget">
-						<h2 class="widget-title">COMPANY</h2>
+						<h2 class="widget-title">Thông tin</h2>
 						<div class="textwidget">
 							<ul>
-								<li><a href="about-us-1.html">About Us</a></li>
-								<li><a href="contact-us.html">Company</a></li>
-								<li><a href="blog-classic.html">Press & Blog</a></li>
-								<li><a href="services-details.html">Privacy Policy</a></li>
-								<li><a href="faq.html">Faq</a></li>
+								<li><a href="#">Về chúng tôi</a></li>
+								<li><a href="#">Phòng khám</a></li>
+								<li><a href="#">Tin tức</a></li>
+								<li><a href="#">Chính sách bảo mật</a></li>
+								<li><a href="#">Câu hỏi thường gặp</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="pbmit-footer-widget-col-3">
 					<div class="widget">
-						<h2 class="widget-title">LATEST POST</h2>
+						<h2 class="widget-title">Tin tức mới</h2>
 						<ul class="pbmit-rpw-list">
 							<li>
 								<a href="blog-single.html">
 									<span class="pbmit-rpw-img">
-										<img src="<?= get_template_directory_uri()?>/assets/images/footer-img-01.jpg" class="img-fluid" alt="">
+										<img src="<?= get_template_directory_uri() ?>/assets/images/footer-img-01.jpg" class="img-fluid" alt="">
 									</span>
 								</a>
 								<span class="pbmit-rpw-content">
 									<span class="pbmit-rpw-title">
-										<a href="blog-single.html">Dental Hygiene for Children</a>
+										<a href="blog-single.html">Vệ sinh răng cho trẻ em</a>
 									</span>
 									<span class="pbmit-rpw-date">
-										<a href="blog-single.html">January 23, 2019</a>
+										<a href="blog-single.html">Ngày 23 tháng 1 năm 2019</a>
 									</span>
 								</span>
 							</li>
 							<li>
 								<a href="blog-single.html">
 									<span class="pbmit-rpw-img">
-										<img src="<?= get_template_directory_uri()?>/assets/images/footer-img-02.jpg" class="img-fluid" alt="">
+										<img src="<?= get_template_directory_uri() ?>/assets/images/footer-img-02.jpg" class="img-fluid" alt="">
 									</span>
 								</a>
 								<span class="pbmit-rpw-content">
 									<span class="pbmit-rpw-title">
-										<a href="blog-single.html">Improvements In Technology</a>
+										<a href="blog-single.html">Cải tiến trong công nghệ</a>
 									</span>
 									<span class="pbmit-rpw-date">
-										<a href="blog-single.html">January 22, 2019</a>
+										<a href="blog-single.html">Ngày 22 tháng 1 năm 2019</a>
 									</span>
 								</span>
 							</li>
@@ -132,29 +129,21 @@
 				</div>
 				<div class="pbmit-footer-widget-col-4">
 					<div class="widget">
-						<h2 class="widget-title">Opening Hours</h2>
+						<h2 class="widget-title">Giờ mở cửa</h2>
 						<div class="textwidget">
 							<div class="pbmit-timelist-wrapper">
 								<ul class="pbmit-timelist-list">
 									<li>
-										<span class="pbmit-timelist-li-title">Mon – Tue</span>
+										<span class="pbmit-timelist-li-title">Thứ 2 – Thứ 6</span>
 										<span class="pbmit-timelist-li-value">10:00 – 18:00</span>
 									</li>
 									<li>
-										<span class="pbmit-timelist-li-title">Wed – Thur</span>
-										<span class="pbmit-timelist-li-value">10:00 – 17:00</span>
-									</li>
-									<li>
-										<span class="pbmit-timelist-li-title">Fri – Sat</span>
+										<span class="pbmit-timelist-li-title">Thứ 7</span>
 										<span class="pbmit-timelist-li-value">10:00 – 12:30</span>
 									</li>
 									<li>
-										<span class="pbmit-timelist-li-title">Saturday</span>
-										<span class="pbmit-timelist-li-value">10:00 – 12:30</span>
-									</li>
-									<li>
-										<span class="pbmit-timelist-li-title">Sunday</span>
-										<span class="pbmit-timelist-li-value">Closed</span>
+										<span class="pbmit-timelist-li-title">Chủ nhật</span>
+										<span class="pbmit-timelist-li-value">Đóng cửa</span>
 									</li>
 								</ul>
 							</div>
@@ -170,7 +159,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="pbmit-footer-copyright-text-area"> Copyright © 2023
-							<a href="index.html">Dentiq Demo1</a>, All Rights Reserved.
+							<a href="#">Detal VN</a>, All Rights Reserved.
 						</div>
 					</div>
 				</div>

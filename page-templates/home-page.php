@@ -127,26 +127,26 @@ get_header();
                     <div class="col-md-6">
                         <ul class="list-group list-group-borderless">
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Routine and medical care
+                                <i class="fa fa-check"></i> Chăm sóc định kỳ và y tế
                             </li>
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Excellence in Healthcare every
+                                <i class="fa fa-check"></i> Sự xuất sắc trong chăm sóc sức khỏe mỗi lúc
                             </li>
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Building a healthy environment.
+                                <i class="fa fa-check"></i> Xây dựng môi trường lành mạnh.
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-6">
                         <ul class="list-group list-group-borderless">
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Routine and medical care
+                                <i class="fa fa-check"></i> Chăm sóc định kỳ và y tế
                             </li>
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Excellence in Healthcare every
+                                <i class="fa fa-check"></i> Sự xuất sắc trong chăm sóc sức khỏe mỗi lúc
                             </li>
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Building a healthy environment.
+                                <i class="fa fa-check"></i> Xây dựng môi trường lành mạnh.
                             </li>
                         </ul>
                     </div>
@@ -499,7 +499,7 @@ get_header();
                                     <span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="150" data-interval="5" data-before="" data-before-style="" data-after="" data-after-style="">150</span>
                                     <span class="pbmit-fid-sub"></span>
                                 </h4>
-                                <h3 class="pbmit-fid-title"><span>Clinic Rooms<br></span></h3>
+                                <h3 class="pbmit-fid-title"><span>Phòng khám<br></span></h3>
                             </div>
                         </div>
                     </div>
@@ -515,7 +515,7 @@ get_header();
                                     <span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="250" data-interval="5" data-before="" data-before-style="" data-after="" data-after-style="">250</span>
                                     <span class="pbmit-fid-sub"></span>
                                 </h4>
-                                <h3 class="pbmit-fid-title"><span>Awards<br></span></h3>
+                                <h3 class="pbmit-fid-title"><span>Giải thưởng<br></span></h3>
                             </div>
                         </div>
                     </div>
@@ -531,7 +531,7 @@ get_header();
                                     <span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="1500" data-interval="5" data-before="" data-before-style="" data-after="" data-after-style="">1500</span>
                                     <span class="pbmit-fid-sub"></span>
                                 </h4>
-                                <h3 class="pbmit-fid-title"><span>Happy Clients<br></span></h3>
+                                <h3 class="pbmit-fid-title"><span>Khách hàng tin dùng<br></span></h3>
                             </div>
                         </div>
                     </div>
@@ -549,12 +549,10 @@ get_header();
             <div class="col-md-12 col-lg-6"></div>
             <div class="col-md-12 col-lg-6">
                 <div class="pbmit-heading-subheading">
-                    <h4 class="pbmit-subtitle">Who we are</h4>
-                    <h2 class="pbmit-title">The milestone in excellent health care.</h2>
+                    <h4 class="pbmit-subtitle">Câu chuyện của chúng tôi</h4>
+                    <h2 class="pbmit-title">Các cột mốc trong ngành chăm sóc sức khỏe răng miệng.</h2>
                     <div class="pbmit-heading-content">
-                        <p>The Medical Cure program participates in student fairs in select locations. You
-                            can always Book an appointment for upcoming events. You can sign up for free
-                            alerts. </p>
+                        <p>Chương trình Chữa bệnh Y học tham gia hội chợ sinh viên tại các địa điểm được chọn. Bạn luôn có thể Đặt lịch hẹn cho các sự kiện sắp tới. Bạn có thể đăng ký nhận thông báo miễn phí.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -569,7 +567,7 @@ get_header();
                                     </div>
                                     <div class="pbmit-ihbox-contents">
                                         <div class="pbmit-ihbox-heading">
-                                            <h2 class="vc_custom_heading">Kids Dentist</h2>
+                                            <h2 class="vc_custom_heading">Thăm khám răng trẻ em</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -587,7 +585,7 @@ get_header();
                                     </div>
                                     <div class="pbmit-ihbox-contents">
                                         <div class="pbmit-ihbox-heading">
-                                            <h2 class="vc_custom_heading">Oral surgery</h2>
+                                            <h2 class="vc_custom_heading">Phẫu thuật răng miệng</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -605,7 +603,7 @@ get_header();
                                     </div>
                                     <div class="pbmit-ihbox-contents">
                                         <div class="pbmit-ihbox-heading">
-                                            <h2 class="vc_custom_heading">Crowns</h2>
+                                            <h2 class="vc_custom_heading">Răng giả</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -623,7 +621,7 @@ get_header();
                                     </div>
                                     <div class="pbmit-ihbox-contents">
                                         <div class="pbmit-ihbox-heading">
-                                            <h2 class="vc_custom_heading">Orthodontics</h2>
+                                            <h2 class="vc_custom_heading">Chỉnh nha</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -642,8 +640,8 @@ get_header();
 <section class="section-lg testimonial-one-bg">
     <div class="container">
         <div class="pbmit-heading-subheading text-center">
-            <h4 class="pbmit-subtitle">OUR CLIENTS</h4>
-            <h2 class="pbmit-title">What our Clients say</h2>
+            <h4 class="pbmit-subtitle">KHÁCH HÀNG CỦA CHÚNG TÔI</h4>
+            <h2 class="pbmit-title">Khách hàng của chúng tôi nói gì</h2>
             <div class="pbmit-heading-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     incididunt ut<br> labore t dolore magna aliqua. </p>
@@ -658,9 +656,7 @@ get_header();
                             <div class="pbminfotech-box-content">
                                 <div class="pbminfotech-box-desc">
                                     <blockquote class="pbminfotech-testimonial-text">
-                                        <p>The doctors and nurses and aides were excellent. The food was
-                                            excellent. I am feeling fine, back to my old self again and it
-                                            feels great. Thank God for clinics such as yours.</p>
+                                        <p>Các bác sĩ, y tá và nhân viên hỗ trợ đã xuất sắc. Đồ ăn cũng rất tuyệt vời. Tôi cảm thấy khỏe mạnh, trở lại như trước và thật tuyệt vời. Cảm ơn Chúa vì những phòng khám như của bạn.</p>
                                     </blockquote>
                                 </div>
                             </div>
@@ -671,7 +667,7 @@ get_header();
                             </div>
                             <div class="pbminfotech-box-author">
                                 <h3 class="pbminfotech-box-title">Richard Scott</h3>
-                                <span class="pbmit-designation">Dental Implants</span>
+                                <span class="pbmit-designation">cấy ghép răng</span>
                             </div>
                         </div>
                     </article>
@@ -683,9 +679,7 @@ get_header();
                             <div class="pbminfotech-box-content">
                                 <div class="pbminfotech-box-desc">
                                     <blockquote class="pbminfotech-testimonial-text">
-                                        <p>A smile adorns a person. I am glad that I can decorate people
-                                            even in this way. Dentistry is not expensive, neglect is Being a
-                                            famous designer is like being a famous dentist.</p>
+                                        <p>Nụ cười làm cho người ta thêm phần duyên dáng. Tôi rất vui mừng vì có thể làm cho mọi người trở nên đẹp đẽ bằng cách này. Nha khoa không đắt đỏ, bỏ qua là điều đắt đỏ. Trở thành nhà thiết kế nổi tiếng cũng giống như trở thành một nha sĩ nổi tiếng.</p>
                                     </blockquote>
                                 </div>
                             </div>
@@ -696,7 +690,7 @@ get_header();
                             </div>
                             <div class="pbminfotech-box-author">
                                 <h3 class="pbminfotech-box-title">Jennifer Smith</h3>
-                                <span class="pbmit-designation">Teeth Whitening</span>
+                                <span class="pbmit-designation">Làm trắng răng</span>
                             </div>
                         </div>
                     </article>
@@ -708,9 +702,7 @@ get_header();
                             <div class="pbminfotech-box-content">
                                 <div class="pbminfotech-box-desc">
                                     <blockquote class="pbminfotech-testimonial-text">
-                                        <p>I appreciate all your kindness and good care you gave me. My
-                                            maintenance treatments have done wonder for me. Thank you so
-                                            much. Please enjoy the chocolates.</p>
+                                        <p>Tôi rất trân trọng sự tử tế và sự chăm sóc tốt mà bạn đã dành cho tôi. Các liệu trình chăm sóc bảo dưỡng đã mang lại sự kỳ diệu cho tôi. Cảm ơn bạn rất nhiều. Hãy thưởng thức những viên sô cô la này nhé.</p>
                                     </blockquote>
                                 </div>
                             </div>
@@ -721,7 +713,7 @@ get_header();
                             </div>
                             <div class="pbminfotech-box-author">
                                 <h3 class="pbminfotech-box-title">Paul Hill</h3>
-                                <span class="pbmit-designation">Orthodontics</span>
+                                <span class="pbmit-designation">Chỉnh nha</span>
                             </div>
                         </div>
                     </article>
@@ -739,29 +731,28 @@ get_header();
             <div class="col-md-12 col-lg-6">
                 <div class="appoinment-one-bg">
                     <div class="pbmit-heading-subheading">
-                        <h4 class="pbmit-subtitle">GET APPOINTMENT</h4>
-                        <h2 class="pbmit-title">Get the right Dentist<br> Care Book with your Doctor</h2>
+                        <h4 class="pbmit-subtitle">Nhận cuộc hẹn</h4>
+                        <h2 class="pbmit-title">Để tìm được nha sĩ phù hợp<br> Hãy đặt lịch hẹn với bác sĩ của bạn.</h2>
                     </div>
                     <form>
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="text" name="your-name" class="form-control" placeholder="Your Name *">
+                                <input type="text" name="your-name" class="form-control" placeholder="Tên của bạn *">
                             </div>
                             <div class="col-sm-6">
-                                <input type="text" name="phone Number" class="form-control" placeholder="Phone Number">
+                                <input type="text" name="phone Number" class="form-control" placeholder="Số điện thoại">
                             </div>
                             <div class="col-sm-6">
-                                <input type="email" name="your-email" class="form-control" placeholder="Your Email *">
+                                <input type="email" name="your-email" class="form-control" placeholder="Email của bạn *">
                             </div>
                             <div class="col-sm-6">
-                                <input type="text" name="subject" class="form-control" placeholder="Subject">
+                                <input type="text" name="subject" class="form-control" placeholder="Chủ đề">
                             </div>
                             <div>
-                                <textarea name="message" cols="40" rows="5" class="form-control" placeholder="Message"></textarea>
+                                <textarea name="message" cols="40" rows="5" class="form-control" placeholder="Lời nhắn"></textarea>
                             </div>
                             <div>
-                                <button type="submit" class="pbmit-btn pbmit-btn-outline-global">Send
-                                    Message</button>
+                                <button type="submit" class="pbmit-btn pbmit-btn-outline-global">Gửi tin nhắn</button>
                             </div>
                         </div>
                     </form>
@@ -779,10 +770,10 @@ get_header();
                             </div>
                             <div class="pbmit-ihbox-contents">
                                 <div class="pbmit-ihbox-subheading">
-                                    <h4 class="vc_custom_heading">SPECIAL OFFER</h4>
+                                    <h4 class="vc_custom_heading">ƯU ĐÃI ĐẶC BIỆT</h4>
                                 </div>
                                 <div class="pbmit-ihbox-heading">
-                                    <h2 class="vc_custom_heading">Get a free medical checkup</h2>
+                                    <h2 class="vc_custom_heading">Nhận kiểm tra y tế miễn phí</h2>
                                 </div>
                             </div>
                         </div>
@@ -864,8 +855,8 @@ get_header();
 <section class="section-lg">
     <div class="container">
         <div class="pbmit-heading-subheading text-center">
-            <h4 class="pbmit-subtitle">Our Blog</h4>
-            <h2 class="pbmit-title">Read Our Latest Articles</h2>
+            <h4 class="pbmit-subtitle">Tin tức</h4>
+            <h2 class="pbmit-title">Đọc các tin mới nhất của chúng tôi</h2>
             <div class="pbmit-heading-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     incididunt ut<br> labore t dolore magna aliqua. </p>
