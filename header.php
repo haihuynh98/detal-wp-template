@@ -10,6 +10,8 @@
  * @package Detal_VN
  */
 
+
+$menu_items = get_detal_top_menu();
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -32,6 +34,8 @@
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'detal-vn'); ?></a>
+
+
 
 		<!-- Header Main Area -->
 		<header class="site-header header-style-1">
@@ -84,7 +88,7 @@
 								<div class="d-flex align-items-center justify-content-between">
 									<div class="site-branding">
 										<span class="site-title">
-											<a href="/">
+											<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
 												<img class="logo-img" src="<?= get_template_directory_uri() ?>/assets/images/logo.png" alt="">
 											</a>
 										</span>
@@ -103,29 +107,31 @@
 													<span class="closepanel">
 														<i class="pbmit-base-icon-cancel"></i>
 													</span>
+													
 													<ul class="navigation clearfix">
-														<li class="active">
-															<a href="/">Trang Chủ</a>
-														</li>
-														<li class="dropdown">
-															<a href="#">Dịch vụ</a>
-															<ul>
-																<li><a href="#">Bọc răng sứ</a></li>
-																<li><a href="#">Nhổ răng khôn</a></li>
-																<li><a href="#">Trám răng</a></li>
-																<li><a href="#">Tẩy trắng răng</a></li>
-																<li><a href="#">Cạo vôi răng</a></li>
-															</ul>
-														</li>
-														<li class="">
-															<a href="#">Bảng Giá</a>
-														</li>
-														<li class="">
-															<a href="#">Ưu đãi</a>
-														</li>
-														<li class="">
-															<a href="#">Tin tức</a>
-														</li>
+														<?php $index = 0; ?>
+														<?php foreach ($menu_items as $menu_item) :
+															$index++;
+															$is_dropdown = false;
+															if (!empty($menu_item['children'])) {
+																$is_dropdown = true;
+															}
+														?>
+															<?php if ($is_dropdown) : ?>
+																<li class="dropdown">
+																	<a href="<?= $menu_item['url'] ?>" href="<?= $menu_item['url'] =='#' ?'javascript:void(0);':''?>"><?= $menu_item['title'] ?></a>
+																	<ul>
+																		<?php foreach ($menu_item['children'] as $child) : ?>
+																			<li><a href="<?= $child['url'] ?>"><?= $child['title'] ?></a></li>
+																		<?php endforeach; ?>
+																	</ul>
+																</li>
+															<?php else : ?>
+																<li class="<?= $menu_item['isCurrent'] ? 'active' : '' ?>">
+																	<a href="<?= $menu_item['url'] ?>"><?= $menu_item['title'] ?></a>
+																</li>
+															<?php endif; ?>
+														<?php endforeach; ?>
 													</ul>
 												</div>
 											</div>
@@ -147,6 +153,7 @@
 					</div>
 				</div>
 			</div>
+			<?php if (is_front_page()): ?>
 			<div class="pbmit-slider-area">
 				<!-- START Slider 01 REVOLUTION SLIDER 6.5.21 -->
 				<p class="rs-p-wp-fix"></p>
@@ -202,6 +209,7 @@
 				</rs-module-wrap>
 				<!-- END REVOLUTION SLIDER -->
 			</div>
+			<?php endif;	?>
 		</header>
 		<!-- Header Main Area End Here -->
 
@@ -236,6 +244,7 @@
 						array(
 							'theme_location' => 'menu-1',
 							'menu_id'        => 'primary-menu',
+							'echo'                 => false,
 						)
 					);
 					?>
