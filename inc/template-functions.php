@@ -137,3 +137,23 @@ function get_menu_items($menu_id)
 
 	return $menu_array;
 }
+
+function get_opening_hours()
+{
+	return get_field('opening_hours', 'contact_infomation');
+}
+
+
+function get_opening_hours_top()
+{
+	$openingHours = get_opening_hours();
+	$topOpeningHours = [];
+
+	foreach ($openingHours as $openHour) {
+		if ($openHour['show_top_header']) {
+			$topOpeningHours[] = $openHour['label'] . ': ' . $openHour['hour'];
+		}
+	}
+
+	return $topOpeningHours;
+}
