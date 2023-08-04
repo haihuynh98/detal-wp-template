@@ -161,8 +161,8 @@ $menu_items = get_detal_top_menu();
 					<rs-module-wrap id="rev_slider_1_1_wrapper" data-alias="slider-01" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
 						<rs-module id="rev_slider_1_1" style="" data-version="6.5.21">
 							<rs-slides>
-								<rs-slide style="position: absolute;" data-key="rs-13" data-title="Slide" data-thumb="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-02-s.jpg" data-anim="ms:600;r:0;" data-in="o:0;" data-out="a:false;">
-									<img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-02-s.jpg" alt="" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-02-s.jpg" data-no-retina>
+								<rs-slide style="position: absolute;" data-key="rs-13" data-title="Slide" data-thumb="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-02.jpg" data-anim="ms:600;r:0;" data-in="o:0;" data-out="a:false;">
+									<img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-02.jpg" alt="" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-02.jpg" data-no-retina>
 									<!--
 							--><rs-layer id="slider-7-slide-13-layer-1" data-type="text" data-color="#4f87fb" data-rsp_ch="on" data-xy="xo:30px,30px,28px,30px;yo:319px,319px,169px,49px;" data-text="s:14;l:20;ls:2px;fw:700;a:inherit;" data-vbility="t,t,f,f" data-frame_0="x:-100%;o:1;tp:600;" data-frame_0_mask="u:t;" data-frame_1="tp:600;st:290;sp:1500;sR:290;" data-frame_1_mask="u:t;" data-frame_999="o:0;tp:600;st:w;sR:7210;" style="z-index:6;font-family:'Mulish';text-transform:uppercase;">Online Solution
 									</rs-layer><!--
@@ -183,8 +183,8 @@ $menu_items = get_detal_top_menu();
 							--><a id="slider-7-slide-13-layer-6" class="rs-layer" href="http://dentiq-demo.pbminfotech.com/demo1/make-appointments/" target="_self" rel="nofollow" data-type="text" data-color="#130947" data-rsp_ch="on" data-xy="xo:298px;yo:545px;" data-text="s:13;l:22;fw:800;a:inherit;" data-vbility="t,t,f,f" data-frame_0="tp:600;" data-frame_1="tp:600;st:3560;sp:500;sR:3560;" data-frame_999="o:0;tp:600;st:w;sR:4940;" style="z-index:10;font-family:'Mulish';text-transform:uppercase;">Đặt lịch miễn phí
 									</a><!--
 --> </rs-slide>
-								<rs-slide style="position: absolute;" data-key="rs-20" data-title="Slide" data-thumb="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-01-s.jpg" data-anim="ms:600;r:0;" data-in="o:0;" data-out="a:false;">
-									<img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-01-s.jpg" alt="" title="slider1-02" width="1900" height="870" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-01-s.jpg" data-no-retina>
+								<rs-slide style="position: absolute;" data-key="rs-20" data-title="Slide" data-thumb="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-01.jpg" data-anim="ms:600;r:0;" data-in="o:0;" data-out="a:false;">
+									<img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-01.jpg" alt="" title="slider1-02" width="1900" height="870" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-01.jpg" data-no-retina>
 									<!--
 							--><rs-layer id="slider-7-slide-20-layer-1" data-type="text" data-color="#4f87fb" data-rsp_ch="on" data-xy="xo:30px,30px,28px,30px;yo:319px,319px,169px,49px;" data-text="s:14;l:20;ls:2px;fw:700;a:inherit;" data-vbility="t,t,f,f" data-frame_0="x:-100%;o:1;tp:600;" data-frame_0_mask="u:t;" data-frame_1="tp:600;st:290;sp:1500;sR:290;" data-frame_1_mask="u:t;" data-frame_999="o:0;tp:600;st:w;sR:7210;" style="z-index:6;font-family:'Mulish';text-transform:uppercase;">Online Solution
 									</rs-layer><!--
