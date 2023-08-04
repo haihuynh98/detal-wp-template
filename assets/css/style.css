@@ -1027,7 +1027,7 @@
     margin-bottom: 15px;
 }
 .portfolio-single{
-	padding-top: 100px;
+	padding-top: 20px;
 	padding-bottom: 70px;
 }
 .portfolio-single .pbmit-pf-featured-wrapper img{
@@ -1105,6 +1105,7 @@
 .post-navigation .nav-links .nav-previous, 
 .post-navigation .nav-links .nav-next {
     width: unset;
+    flex: unset;
 }
 .post-navigation .nav-links .nav-previous {
     margin-right: auto!important;
@@ -1113,6 +1114,7 @@
 .post-navigation .nav-links a{
 	border: 4px solid #f2f3f4;
 	display: flex;
+    width: fit-content;
 }
 .post-navigation .pbmit-portfolio-nav-icon{
 	border-right: 4px solid #f2f3f4;
@@ -1145,6 +1147,9 @@
     font-weight: 400;
     color: #797979;
 	display: block;
+    white-space: nowrap; /* Đảm bảo văn bản chỉ xuất hiện trên một dòng */
+    overflow: hidden; /* Ẩn nội dung vượt quá độ rộng container */
+    text-overflow: ellipsis; /* Hiển thị dấu ba chấm (...) nếu nội dung vượt quá */
 }
 .post-navigation .nav-next .pbmit-portfolio-nav-icon{
 	border-left: 4px solid #f2f3f4;

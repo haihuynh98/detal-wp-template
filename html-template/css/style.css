@@ -1113,6 +1113,7 @@
 .post-navigation .nav-links a{
 	border: 4px solid #f2f3f4;
 	display: flex;
+    width: fit-content;
 }
 .post-navigation .pbmit-portfolio-nav-icon{
 	border-right: 4px solid #f2f3f4;

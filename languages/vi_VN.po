@@ -1,0 +1,2 @@
+msgid "Previous:"
+msgstr "Trước:"

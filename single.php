@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all single posts
  *
@@ -10,31 +11,74 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<main id="primary" class="site-main">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+	<?php
+	// var_dump(get_field('show_image_cover', get_the_ID(), false));
+	if (get_field('show_image_cover', get_the_ID(), false)) {
+		echo get_template_part('template-parts/single/title-bar', 'banner', ['title' => get_the_title(), 'image_conver' => get_field('image_cover', get_the_ID(), false)]);
+	} else {
+		echo get_template_part('template-parts/single/title-bar', null, ['title' => get_the_title()]);
+	}
 
-			get_template_part( 'template-parts/content', get_post_type() );
+	?>
 
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'detal-vn' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'detal-vn' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
+	<!-- Page Content -->
+	<div class="page-content">
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+		<!-- portfolio Details -->
+		<section class="portfolio-single">
+			<div class="container">
+				<div class="pbmit-portfolio-single">
+					<div class="single-content">
 
-		endwhile; // End of the loop.
-		?>
+						<?php
+						while (have_posts()) :
+							the_post();
 
-	</main><!-- #main -->
+							the_content(
+								sprintf(
+									wp_kses(
+										/* translators: %s: Name of current post. Only visible to screen readers */
+										__('Continue reading<span class="screen-reader-text"> "%s"</span>', 'detal-vn'),
+										array(
+											'span' => array(
+												'class' => array(),
+											),
+										)
+									),
+									wp_kses_post(get_the_title())
+								)
+							);
+						?>
+					</div>
+
+					<div class="pbmit-pf-single-np-nav">
+						<?php
+							the_post_navigation(
+								array(
+									'prev_text' => '<span class="pbmit-portfolio-nav-icon"><i class="pbmit-base-icon-left-open"></i></span>
+		<span class="pbmit-portfolio-nav-wrapper"><span class="pbmit-portfolio-nav-head">' . esc_html__('Trước:', 'detal-vn') . '</span><span class="pbmit-portfolio-nav nav-title">%title</span>',
+									'next_text' => '<span class="pbmit-portfolio-nav-wrapper"><span class="pbmit-portfolio-nav-head">' . esc_html__('Kế tiếp:', 'detal-vn') . '</span><span class="pbmit-portfolio-nav nav-title">%title</span></span>
+		<span class="pbmit-portfolio-nav-icon"><i class="pbmit-base-icon-right-open"></i></span>',
+								)
+							); ?>
+					</div>
+				<?php endwhile; // End of the loop.
+				?>
+
+				<?= get_template_part('template-parts/single/related_posts') ?>
+				</div>
+			</div>
+		</section>
+		<!-- portfolio Details End-->
+
+	</div>
+	<!-- Page Content End -->
+
+
+
+</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();

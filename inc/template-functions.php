@@ -157,3 +157,74 @@ function get_opening_hours_top()
 
 	return $topOpeningHours;
 }
+
+
+function set_default_language()
+{
+	return 'vi'; // 'vi' là mã ngôn ngữ Tiếng Việt. Bạn có thể thay đổi thành mã ngôn ngữ khác nếu cần.
+}
+add_filter('locale', 'set_default_language');
+
+function get_related_posts() {
+    global $post;
+    
+    // Lấy danh sách các thẻ hoặc categories của bài viết hiện tại
+    $post_tags = wp_get_post_tags($post->ID);
+    $post_categories = get_the_category($post->ID);
+    
+    // Tạo một mảng chứa các ID của bài viết liên quan
+    $related_posts_ids = array();
+    
+    // Lấy các bài viết liên quan dựa trên thẻ của bài viết hiện tại
+    if ($post_tags) {
+        $tag_ids = array();
+        foreach ($post_tags as $tag) {
+            $tag_ids[] = $tag->term_id;
+        }
+
+        $related_posts_args = array(
+            'tag__in' => $tag_ids,
+            'post__not_in' => array($post->ID),
+            'posts_per_page' => 3, // Số bài viết liên quan muốn hiển thị
+            'ignore_sticky_posts' => 1,
+        );
+
+        $related_posts_query = new WP_Query($related_posts_args);
+
+        if ($related_posts_query->have_posts()) {
+            while ($related_posts_query->have_posts()) {
+                $related_posts_query->the_post();
+                $related_posts_ids[] = get_the_ID();
+            }
+            wp_reset_postdata();
+        }
+    }
+
+    // Lấy các bài viết liên quan dựa trên categories của bài viết hiện tại
+    if ($post_categories && empty($related_posts_ids)) {
+        $category_ids = array();
+        foreach ($post_categories as $category) {
+            $category_ids[] = $category->term_id;
+        }
+
+        $related_posts_args = array(
+            'category__in' => $category_ids,
+            'post__not_in' => array($post->ID),
+            'posts_per_page' => 3, // Số bài viết liên quan muốn hiển thị
+            'ignore_sticky_posts' => 1,
+        );
+
+        $related_posts_query = new WP_Query($related_posts_args);
+
+        if ($related_posts_query->have_posts()) {
+            while ($related_posts_query->have_posts()) {
+                $related_posts_query->the_post();
+                $related_posts_ids[] = get_the_ID();
+            }
+            wp_reset_postdata();
+        }
+    }
+
+    // Trả về các ID của bài viết liên quan
+    return $related_posts_ids;
+}
