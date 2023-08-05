@@ -71,6 +71,7 @@
 }
 .video-one-img img{
 	border-radius: 4px;
+    max-width: 300px;
 }
 .video-one-button-bg{
 	position: absolute;

@@ -13,53 +13,21 @@ get_header();
 <section class="video-section-one">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 col-lg-4">
-                <div class="video-one-left-box pbmit-bg-color-globalcolor">
-                    <div class="pbmit-ihbox-style-6">
-                        <div class="pbmit-ihbox-box">
-                            <div class="pbmit-ihbox-headingicon d-flex align-items-center">
-                                <div class="pbmit-ihbox-icon">
-                                    <div class="pbmit-ihbox-icon-wrapper">
-                                        <i class="pbmit-dentiq-icon pbmit-dentiq-icon-headset"></i>
-                                    </div>
-                                </div>
-                                <div class="pbmit-heading">
-                                    <div class="pbmit-ihbox-subheading">
-                                        <h4 class="vc_custom_heading">Liên hệ với chúng tôi</h4>
-                                    </div>
-                                    <div class="pbmit-ihbox-heading">0123-456-789</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pbmit-ihbox-contents">
-                                <div class="pbmit-ihbox-content">Chăm Sóc Nụ Cười, Đón Nhận Hạnh Phúc!</div>
-                                <div class="pbmit-ihbox-btn">
-                                    <div class="vc_btn3-container vc_btn3-inline">
-                                        <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-globalcolor" href="contact-us.html" title=""><span>Liên hệ</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-8">
+            <div class="col-md-12 col-lg-12">
                 <div class="video-one-bg">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="video-one-main-box">
-                                <h4>Chúng tôi có chứng nhận quốc tế</h4>
+                                <h4><?= get_field('title_above_video') ?></h4>
                                 <div class="video-one-img">
-                                    <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/img-01.jpg" class="img-fluid" alt="">
+                                    <img src="<?= get_field('thumbnail_of_video') ?>" class="img-fluid" alt="">
                                     <div class="video-one-button-bg">
                                         <div class="video-one-play-button">
                                             <span><i class="fa fa-play"></i></span>
-                                            <a href="https://www.youtube.com/watch?v=2s2mctaf26s" class="pbmin-lightbox-video"></a>
+                                            <a href="<?= get_field('video_link_yt') ?>" class="pbmin-lightbox-video"></a>
                                         </div>
                                     </div>
-                                    <div class="video-one-content">
-                                        Xem lịch sử thành công của chúng tôi
-                                    </div>
+                                    <div class="video-one-content"><?= get_field('description_video') ?></div>
                                 </div>
                             </div>
                         </div>
@@ -85,18 +53,12 @@ get_header();
                                 <div class="pbmit-timelist-ele-wrapper">
                                     <div class="pbmit-timelist-wrapper">
                                         <ul class="pbmit-timelist-list">
+                                            <?php foreach(get_opening_hours() as $hour):?>
                                             <li>
-                                                <span class="pbmit-timelist-li-title">Thứ 2 - Thứ 6</span>
-                                                <span class="pbmit-timelist-li-value">8:00am - 7:00pm</span>
+                                                <span class="pbmit-timelist-li-title"><?= $hour['label']?></span>
+                                                <span class="pbmit-timelist-li-value"><?= $hour['hour']?></span>
                                             </li>
-                                            <li>
-                                                <span class="pbmit-timelist-li-title">Thứ 7</span>
-                                                <span class="pbmit-timelist-li-value">7:30am - 4:00pm</span>
-                                            </li>
-                                            <li>
-                                                <span class="pbmit-timelist-li-title">Chủ nhật</span>
-                                                <span class="pbmit-timelist-li-value">Đóng cửa</span>
-                                            </li>
+                                            <?php endforeach;?>
                                         </ul>
                                     </div>
                                 </div>
