@@ -176,3 +176,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Functions acf option page.
+ */
+require get_template_directory() . '/inc/acf-option-page.php';
