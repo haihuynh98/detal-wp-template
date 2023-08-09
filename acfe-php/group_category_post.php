@@ -3,15 +3,15 @@
 if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
-	'key' => 'group_post_title_style',
-	'title' => 'Title style',
+	'key' => 'group_category_post',
+	'title' => 'Category post',
 	'fields' => array(
 		array(
-			'key' => 'field_64cd1cc8e2daa',
-			'label' => 'Show image cover',
-			'name' => 'show_image_cover',
+			'key' => 'field_64d36beec4bd4',
+			'label' => 'Small title',
+			'name' => 'small_title',
 			'aria-label' => '',
-			'type' => 'true_false',
+			'type' => 'text',
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
@@ -20,29 +20,41 @@ acf_add_local_field_group(array(
 				'class' => '',
 				'id' => '',
 			),
-			'message' => '',
-			'default_value' => 0,
-			'ui_on_text' => 'show',
-			'ui_off_text' => 'hide',
-			'ui' => 1,
+			'default_value' => '',
+			'maxlength' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
 		),
 		array(
-			'key' => 'field_64cd1d1ae2dab',
-			'label' => 'Image cover',
-			'name' => 'image_cover',
+			'key' => 'field_64d36c18c4bd5',
+			'label' => 'Big title',
+			'name' => 'big_title',
+			'aria-label' => '',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'maxlength' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+		),
+		array(
+			'key' => 'field_64d36e2b70d42',
+			'label' => 'banner',
+			'name' => 'banner',
 			'aria-label' => '',
 			'type' => 'image',
 			'instructions' => '',
 			'required' => 1,
-			'conditional_logic' => array(
-				array(
-					array(
-						'field' => 'field_64cd1cc8e2daa',
-						'operator' => '==',
-						'value' => '1',
-					),
-				),
-			),
+			'conditional_logic' => 0,
 			'wrapper' => array(
 				'width' => '',
 				'class' => '',
@@ -50,7 +62,7 @@ acf_add_local_field_group(array(
 			),
 			'uploader' => '',
 			'return_format' => 'url',
-			'acfe_thumbnail' => 1,
+			'acfe_thumbnail' => 0,
 			'min_width' => '',
 			'min_height' => '',
 			'min_size' => '',
@@ -65,9 +77,9 @@ acf_add_local_field_group(array(
 	'location' => array(
 		array(
 			array(
-				'param' => 'post_type',
+				'param' => 'taxonomy',
 				'operator' => '==',
-				'value' => 'post',
+				'value' => 'category',
 			),
 		),
 	),
@@ -87,7 +99,7 @@ acf_add_local_field_group(array(
 	'acfe_form' => 0,
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1691206230,
+	'modified' => 1691577954,
 ));
 
 endif;
