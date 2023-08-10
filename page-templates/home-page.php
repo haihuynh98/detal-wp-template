@@ -158,7 +158,7 @@ get_header();
             </div>
             <div class="col-md-12 col-lg-6">
                 <div class="about-one-img">
-                    <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/img-02.png" class="img-fluid" alt="">
+                    <img src="<?= get_template_directory_uri() ?>/assets/images/home-dental/tam-2.jpg" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
@@ -505,7 +505,7 @@ get_header();
 <!-- Counter End -->
 
 <!-- About us Start -->
-<section class="about-us-section-one section-lgb">
+<section class="about-us-section-one section-lgb" style="background-image:url(<?= get_template_directory_uri(). '/assets/images/home-dental/tam-3.jpg' ?>)">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-lg-6"></div>
@@ -721,6 +721,7 @@ get_header();
                 </div>
             </div>
             <div class="col-md-12 col-lg-6">
+                <style>.appoinment-one-img:before {background-image: url(<?= get_template_directory_uri() .'/assets/images/home-dental/tam-4.jpg' ?>);}</style>
                 <div class="appoinment-one-img"></div>
                 <div class="pbmit-ihbox-style-3  pbmit-col-stretched-right">
                     <div class="pbmit-ihbox-box">

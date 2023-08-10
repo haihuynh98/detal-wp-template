@@ -52,7 +52,7 @@ $menu_items = get_detal_top_menu();
 							</div>
 							<div class="pbmit-pre-header-right">
 								<ul class="pbmit-contact-info">
-									<li><i class="pbmit-base-icon-clock-solid"></i> <?= implode(', ', get_opening_hours_top())?></li>
+									<li><i class="pbmit-base-icon-clock-solid"></i> <?= implode(', ', get_opening_hours_top()) ?></li>
 									<li>
 										<ul class="pbmit-social-links">
 											<li class="pbmit-social-li pbmit-social-facebook">
@@ -154,57 +154,30 @@ $menu_items = get_detal_top_menu();
 					</div>
 				</div>
 			</div>
-			<?php if (is_front_page()) : ?>
+			<?php $abcd= false; echo do_shortcode('[rev_slider alias="slider-1"][/rev_slider]');?>
+			<?php //if (is_front_page()) : ?>
+			<?php if ($abcd) : ?>
 				<div class="pbmit-slider-area">
 					<!-- START Slider 01 REVOLUTION SLIDER 6.5.21 -->
 					<p class="rs-p-wp-fix"></p>
 					<rs-module-wrap id="rev_slider_1_1_wrapper" data-alias="slider-01" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
 						<rs-module id="rev_slider_1_1" style="" data-version="6.5.21">
 							<rs-slides>
-								<rs-slide style="position: absolute;" data-key="rs-13" data-title="Slide" data-thumb="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-02-s.jpg" data-anim="ms:600;r:0;" data-in="o:0;" data-out="a:false;">
-									<img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-02-s.jpg" alt="" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-02-s.jpg" data-no-retina>
-									<!--
-							--><rs-layer id="slider-7-slide-13-layer-1" data-type="text" data-color="#4f87fb" data-rsp_ch="on" data-xy="xo:30px,30px,28px,30px;yo:319px,319px,169px,49px;" data-text="s:14;l:20;ls:2px;fw:700;a:inherit;" data-vbility="t,t,f,f" data-frame_0="x:-100%;o:1;tp:600;" data-frame_0_mask="u:t;" data-frame_1="tp:600;st:290;sp:1500;sR:290;" data-frame_1_mask="u:t;" data-frame_999="o:0;tp:600;st:w;sR:7210;" style="z-index:6;font-family:'Mulish';text-transform:uppercase;">Online Solution
-									</rs-layer><!--
-
-							--><rs-layer id="slider-7-slide-13-layer-2" data-type="text" data-color="#130947" data-rsp_ch="on" data-xy="xo:30px,30px,34px,25px;yo:352px,352px,213px,131px;" data-text="s:55,55,34,24;l:60,60,44,30;ls:-1px;fw:900;a:inherit;" data-frame_0="x:-100%;o:1;tp:600;" data-frame_0_mask="u:t;" data-frame_1="tp:600;st:1080;sp:1500;sR:1080;" data-frame_1_mask="u:t;" data-frame_999="o:0;tp:600;st:w;sR:6420;" style="z-index:7;font-family:'Mulish';">Take the<span class="thsn-skincolor">
+								<rs-slide style="position: absolute;" data-key="rs-13" data-title="Slide" data-thumb="<?= get_template_directory_uri() ?>/assets/images/home-dental/tam-1.jpg" data-anim="ms:600;r:0;" data-in="o:0;" data-out="a:false;">
+									<img src="<?= get_template_directory_uri() ?>/assets/images/home-dental/tam-1.jpg" alt="" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="<?= get_template_directory_uri() ?>/assets/images/home-dental/tam-1.jpg" data-no-retina>
+									<!-- <rs-layer id="slider-7-slide-13-layer-1" data-type="text" data-color="#4f87fb" data-rsp_ch="on" data-xy="xo:30px,30px,28px,30px;yo:319px,319px,169px,49px;" data-text="s:14;l:20;ls:2px;fw:700;a:inherit;" data-vbility="t,t,f,f" data-frame_0="x:-100%;o:1;tp:600;" data-frame_0_mask="u:t;" data-frame_1="tp:600;st:290;sp:1500;sR:290;" data-frame_1_mask="u:t;" data-frame_999="o:0;tp:600;st:w;sR:7210;" style="z-index:6;font-family:'Mulish';text-transform:uppercase;">Online Solution
+									</rs-layer>
+									<rs-layer id="slider-7-slide-13-layer-2" data-type="text" data-color="#130947" data-rsp_ch="on" data-xy="xo:30px,30px,34px,25px;yo:352px,352px,213px,131px;" data-text="s:55,55,34,24;l:60,60,44,30;ls:-1px;fw:900;a:inherit;" data-frame_0="x:-100%;o:1;tp:600;" data-frame_0_mask="u:t;" data-frame_1="tp:600;st:1080;sp:1500;sR:1080;" data-frame_1_mask="u:t;" data-frame_999="o:0;tp:600;st:w;sR:6420;" style="z-index:7;font-family:'Mulish';">Take the<span class="thsn-skincolor">
 											world's</span> best<br>
 										Quality Treatment.
-									</rs-layer><!--
-
-							--><rs-layer id="slider-7-slide-13-layer-3" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on" data-xy="xo:34px,34px,38px,29px;yo:466px,466px,298px,188px;" data-text="fw:900;a:inherit;" data-dim="w:170px,170px,110px,75px;h:5px,5px,4px,3px;" data-frame_0="x:-100%;o:1;tp:600;" data-frame_0_mask="u:t;" data-frame_1="tp:600;st:1900;sp:1500;sR:1900;" data-frame_1_mask="u:t;" data-frame_999="o:0;tp:600;st:w;sR:5600;" style="z-index:5;background-color:#4f87fb;">
-									</rs-layer><!--
-
-							--><a id="slider-7-slide-13-layer-4" class="rs-layer rev-btn" href="http://dentiq-demo.pbminfotech.com/demo1/contact-us/" target="_self" rel="nofollow" data-type="button" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:30px,30px,39px,26px;yo:527px,527px,324px,207px;" data-text="s:13,13,7,4;l:26,26,15,9;ls:1px,1px,0px,0px;fw:700;a:inherit;" data-padding="t:15,15,9,6;r:40,40,25,15;b:15,15,9,6;l:40,40,25,15;" data-border="bor:4px,4px,4px,4px;" data-frame_0="tp:600;" data-frame_1="tp:600;st:3000;sp:500;sR:3000;" data-frame_999="o:0;tp:600;st:w;sR:5500;" data-frame_hover="bgc:#130947;boc:#000;bor:3px,3px,3px,3px;bos:solid;oX:50;oY:50;sp:0;" style="z-index:8;background-color:#4f87fb;font-family:'Mulish';cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">Liên hệ</a><!--
-
-							--><rs-layer id="slider-7-slide-13-layer-5" data-type="image" data-rsp_ch="on" data-xy="xo:198px,198px,198px,109px;yo:509px,509px,509px,156px;" data-text="l:22;a:inherit;" data-dim="w:['109px','109px','109px','109px'];h:['109px','109px','109px','109px'];" data-vbility="t,t,f,f" data-frame_0="tp:600;" data-frame_1="tp:600;st:3510;sp:500;sR:3510;" data-frame_999="o:0;tp:600;st:w;sR:4990;" style="z-index:9;"><img src="<?= get_template_directory_uri() ?>/assets/revolution/images/slider-icon.png" alt="slider-icon" class="tp-rs-img rs-lazyload" width="109" height="109" data-lazyload="<?= get_template_directory_uri() ?>/assets/revolution/images/slider-icon.png" data-no-retina>
-									</rs-layer><!--
-
-							--><a id="slider-7-slide-13-layer-6" class="rs-layer" href="http://dentiq-demo.pbminfotech.com/demo1/make-appointments/" target="_self" rel="nofollow" data-type="text" data-color="#130947" data-rsp_ch="on" data-xy="xo:298px;yo:545px;" data-text="s:13;l:22;fw:800;a:inherit;" data-vbility="t,t,f,f" data-frame_0="tp:600;" data-frame_1="tp:600;st:3560;sp:500;sR:3560;" data-frame_999="o:0;tp:600;st:w;sR:4940;" style="z-index:10;font-family:'Mulish';text-transform:uppercase;">Đặt lịch miễn phí
-									</a><!--
---> </rs-slide>
-								<rs-slide style="position: absolute;" data-key="rs-20" data-title="Slide" data-thumb="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-01-s.jpg" data-anim="ms:600;r:0;" data-in="o:0;" data-out="a:false;">
-									<img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-01-s.jpg" alt="" title="slider1-02" width="1900" height="870" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-01-s.jpg" data-no-retina>
-									<!--
-							--><rs-layer id="slider-7-slide-20-layer-1" data-type="text" data-color="#4f87fb" data-rsp_ch="on" data-xy="xo:30px,30px,28px,30px;yo:319px,319px,169px,49px;" data-text="s:14;l:20;ls:2px;fw:700;a:inherit;" data-vbility="t,t,f,f" data-frame_0="x:-100%;o:1;tp:600;" data-frame_0_mask="u:t;" data-frame_1="tp:600;st:290;sp:1500;sR:290;" data-frame_1_mask="u:t;" data-frame_999="o:0;tp:600;st:w;sR:7210;" style="z-index:6;font-family:'Mulish';text-transform:uppercase;">Online Solution
-									</rs-layer><!--
-
-							--><rs-layer id="slider-7-slide-20-layer-2" data-type="text" data-color="#130947" data-rsp_ch="on" data-xy="xo:30px,30px,34px,25px;yo:352px,352px,213px,131px;" data-text="s:55,55,34,24;l:60,60,44,30;ls:-1px;fw:900;a:inherit;" data-frame_0="x:-100%;o:1;tp:600;" data-frame_0_mask="u:t;" data-frame_1="tp:600;st:1080;sp:1500;sR:1080;" data-frame_1_mask="u:t;" data-frame_999="o:0;tp:600;st:w;sR:6420;" style="z-index:7;font-family:'Mulish';">Take the<span class="thsn-skincolor">
-											world's</span> best<br>
-										Quality Treatment.
-									</rs-layer><!--
-
-							--><rs-layer id="slider-7-slide-20-layer-3" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on" data-xy="xo:34px,34px,38px,29px;yo:466px,466px,298px,188px;" data-text="fw:900;a:inherit;" data-dim="w:170px,170px,110px,75px;h:5px,5px,4px,3px;" data-frame_0="x:-100%;o:1;tp:600;" data-frame_0_mask="u:t;" data-frame_1="tp:600;st:1900;sp:1500;sR:1900;" data-frame_1_mask="u:t;" data-frame_999="o:0;tp:600;st:w;sR:5600;" style="z-index:5;background-color:#4f87fb;">
-									</rs-layer><!--
-
-							--><a id="slider-7-slide-20-layer-4" class="rs-layer rev-btn" href="http://dentiq-demo.pbminfotech.com/demo1/contact-us/" target="_self" rel="nofollow" data-type="button" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:30px,30px,39px,26px;yo:527px,527px,324px,207px;" data-text="s:13,13,7,4;l:26,26,15,9;ls:1px,1px,0px,0px;fw:700;a:inherit;" data-padding="t:15,15,9,6;r:40,40,25,15;b:15,15,9,6;l:40,40,25,15;" data-border="bor:4px,4px,4px,4px;" data-frame_0="tp:600;" data-frame_1="tp:600;st:3000;sp:500;sR:3000;" data-frame_999="o:0;tp:600;st:w;sR:5500;" data-frame_hover="bgc:#130947;boc:#000;bor:3px,3px,3px,3px;bos:solid;oX:50;oY:50;sp:0;" style="z-index:8;background-color:#4f87fb;font-family:'Mulish';cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">Liên hệ</a><!--
-
-							--><rs-layer id="slider-7-slide-20-layer-5" data-type="image" data-rsp_ch="on" data-xy="xo:198px,198px,198px,109px;yo:509px,509px,509px,156px;" data-text="l:22;a:inherit;" data-dim="w:['109px','109px','109px','109px'];h:['109px','109px','109px','109px'];" data-vbility="t,t,f,f" data-frame_0="tp:600;" data-frame_1="tp:600;st:3510;sp:500;sR:3510;" data-frame_999="o:0;tp:600;st:w;sR:4990;" style="z-index:9;"><img src="<?= get_template_directory_uri() ?>/assets/revolution/images/slider-icon.png" alt="slider-icon" class="tp-rs-img rs-lazyload" width="109" height="109" data-lazyload="<?= get_template_directory_uri() ?>/assets/revolution/images/slider-icon.png" data-no-retina>
-									</rs-layer><!--
-
-							--><a id="slider-7-slide-20-layer-6" class="rs-layer" href="http://dentiq-demo.pbminfotech.com/demo1/make-appointments/" target="_self" rel="nofollow" data-type="text" data-color="#130947" data-rsp_ch="on" data-xy="xo:298px;yo:545px;" data-text="s:13;l:22;fw:800;a:inherit;" data-vbility="t,t,f,f" data-frame_0="tp:600;" data-frame_1="tp:600;st:3560;sp:500;sR:3560;" data-frame_999="o:0;tp:600;st:w;sR:4940;" style="z-index:10;font-family:'Mulish';text-transform:uppercase;">Đặt lịch miễn phí
-									</a><!--
---> </rs-slide>
+									</rs-layer> -->
+									<rs-layer id="slider-7-slide-13-layer-3" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on" data-xy="xo:34px,34px,38px,29px;yo:466px,466px,298px,188px;" data-text="fw:900;a:inherit;" data-dim="w:170px,170px,110px,75px;h:5px,5px,4px,3px;" data-frame_0="x:-100%;o:1;tp:600;" data-frame_0_mask="u:t;" data-frame_1="tp:600;st:1900;sp:1500;sR:1900;" data-frame_1_mask="u:t;" data-frame_999="o:0;tp:600;st:w;sR:5600;" style="z-index:5;background-color:#4f87fb;">
+									</rs-layer>
+									<a id="slider-7-slide-13-layer-4" class="rs-layer rev-btn" href="/lien-he" target="_self" rel="nofollow" data-type="button" data-color="rgba(255,255,255,1)" data-rsp_ch="on" data-xy="xo:30px,30px,39px,26px;yo:527px,527px,324px,207px;" data-text="s:13,13,7,4;l:26,26,15,9;ls:1px,1px,0px,0px;fw:700;a:inherit;" data-padding="t:15,15,9,6;r:40,40,25,15;b:15,15,9,6;l:40,40,25,15;" data-border="bor:4px,4px,4px,4px;" data-frame_0="tp:600;" data-frame_1="tp:600;st:3000;sp:500;sR:3000;" data-frame_999="o:0;tp:600;st:w;sR:5500;" data-frame_hover="bgc:#130947;boc:#000;bor:3px,3px,3px,3px;bos:solid;oX:50;oY:50;sp:0;" style="z-index:8;background-color:#4f87fb;font-family:'Mulish';cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">Liên hệ</a>
+									<rs-layer id="slider-7-slide-13-layer-5" data-type="image" data-rsp_ch="on" data-xy="xo:198px,198px,198px,109px;yo:509px,509px,509px,156px;" data-text="l:22;a:inherit;" data-dim="w:['109px','109px','109px','109px'];h:['109px','109px','109px','109px'];" data-vbility="t,t,f,f" data-frame_0="tp:600;" data-frame_1="tp:600;st:3510;sp:500;sR:3510;" data-frame_999="o:0;tp:600;st:w;sR:4990;" style="z-index:9;"><img src="<?= get_template_directory_uri() ?>/assets/revolution/images/slider-icon.png" alt="slider-icon" class="tp-rs-img rs-lazyload" width="109" height="109" data-lazyload="<?= get_template_directory_uri() ?>/assets/revolution/images/slider-icon.png" data-no-retina>
+									</rs-layer><a id="slider-7-slide-13-layer-6" class="rs-layer" href="/lien-he" target="_self" rel="nofollow" data-type="text" data-color="#130947" data-rsp_ch="on" data-xy="xo:298px;yo:545px;" data-text="s:13;l:22;fw:800;a:inherit;" data-vbility="t,t,f,f" data-frame_0="tp:600;" data-frame_1="tp:600;st:3560;sp:500;sR:3560;" data-frame_999="o:0;tp:600;st:w;sR:4940;" style="z-index:10;font-family:'Mulish';text-transform:uppercase;">Đặt lịch miễn phí
+									</a>
+								</rs-slide>
 							</rs-slides>
 						</rs-module>
 					</rs-module-wrap>
@@ -236,7 +209,7 @@ $menu_items = get_detal_top_menu();
 						<p class="site-description"><?php echo $detal_vn_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
 													?></p>
 					<?php endif; ?>
-				</div><!-- .site-branding -->
+				</div> .site-branding
 
 				<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'detal-vn'); ?></button>
