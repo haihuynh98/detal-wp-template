@@ -53,12 +53,12 @@ get_header();
                                 <div class="pbmit-timelist-ele-wrapper">
                                     <div class="pbmit-timelist-wrapper">
                                         <ul class="pbmit-timelist-list">
-                                            <?php foreach(get_opening_hours() as $hour):?>
-                                            <li>
-                                                <span class="pbmit-timelist-li-title"><?= $hour['label']?></span>
-                                                <span class="pbmit-timelist-li-value"><?= $hour['hour']?></span>
-                                            </li>
-                                            <?php endforeach;?>
+                                            <?php foreach (get_opening_hours() as $hour) : ?>
+                                                <li>
+                                                    <span class="pbmit-timelist-li-title"><?= $hour['label'] ?></span>
+                                                    <span class="pbmit-timelist-li-value"><?= $hour['hour'] ?></span>
+                                                </li>
+                                            <?php endforeach; ?>
                                         </ul>
                                     </div>
                                 </div>
@@ -503,7 +503,7 @@ get_header();
 <!-- Counter End -->
 
 <!-- About us Start -->
-<section class="about-us-section-one section-lgb" style="background-image:url(<?= get_template_directory_uri(). '/assets/images/home-dental/tam-3.jpg' ?>)">
+<section class="about-us-section-one section-lgb" style="background-image:url(<?= get_template_directory_uri() . '/assets/images/home-dental/tam-3.jpg' ?>)">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-lg-6"></div>
@@ -601,10 +601,9 @@ get_header();
     <div class="container">
         <div class="pbmit-heading-subheading text-center">
             <h4 class="pbmit-subtitle">KHÁCH HÀNG CỦA CHÚNG TÔI</h4>
-            <h2 class="pbmit-title">Khách hàng của chúng tôi nói gì</h2>
+            <h2 class="pbmit-title">Phản hồi của khách hàng về Nha khoa SGC Dental Center</h2>
             <div class="pbmit-heading-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut<br> labore t dolore magna aliqua. </p>
+                <p>Những câu chuyện trải nghiệm của khách hàng trong và ngoài nước khi đến với Nha khoa SGC Dental Center </p>
             </div>
         </div>
         <div class="swiper-slider" data-arrows-class="team3-arrow" data-autoplay="false" data-dots="true" data-arrows="true" data-columns="3" data-margin="30" data-effect="slide">
@@ -616,18 +615,18 @@ get_header();
                             <div class="pbminfotech-box-content">
                                 <div class="pbminfotech-box-desc">
                                     <blockquote class="pbminfotech-testimonial-text">
-                                        <p>Các bác sĩ, y tá và nhân viên hỗ trợ đã xuất sắc. Đồ ăn cũng rất tuyệt vời. Tôi cảm thấy khỏe mạnh, trở lại như trước và thật tuyệt vời. Cảm ơn Chúa vì những phòng khám như của bạn.</p>
+                                        <p>Cảm ơn đội ngũ bác sĩ, phụ tá và nhân viên đã hỗ trợ trồng răng lại giúp cho 2 vợ chồng tôi. Cảm thấy rất xứng đáng khi lặng lội từ Mỹ về Việt Nam. SGC Dental đúng là nơi trồng răng Implant uy tín</p>
                                     </blockquote>
                                 </div>
                             </div>
                             <div class="pbminfotech-box-img">
                                 <div class="pbmit-featured-wrapper">
-                                    <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/testimonail/testimonial-01.jpg" class="img-fluid" alt="">
+                                    <img src="<?= get_template_directory_uri() ?>/assets/images/phanhoi/phan-hoi-1.png" class="img-fluid" alt="">
                                 </div>
                             </div>
                             <div class="pbminfotech-box-author">
-                                <h3 class="pbminfotech-box-title">Richard Scott</h3>
-                                <span class="pbmit-designation">cấy ghép răng</span>
+                                <h3 class="pbminfotech-box-title">Vợ chồng chú Hải</h3>
+                                <span class="pbmit-designation">Cấy ghép răng</span>
                             </div>
                         </div>
                     </article>
@@ -639,18 +638,18 @@ get_header();
                             <div class="pbminfotech-box-content">
                                 <div class="pbminfotech-box-desc">
                                     <blockquote class="pbminfotech-testimonial-text">
-                                        <p>Nụ cười làm cho người ta thêm phần duyên dáng. Tôi rất vui mừng vì có thể làm cho mọi người trở nên đẹp đẽ bằng cách này. Nha khoa không đắt đỏ, bỏ qua là điều đắt đỏ. Trở thành nhà thiết kế nổi tiếng cũng giống như trở thành một nha sĩ nổi tiếng.</p>
+                                        <p>Bác sĩ tay nghề rất tốt. Ca răng chỉ hoàn thành trong 48h. Thực sự rất bất ngờ với kết quả. Cho SGC Dental 10đ.</p>
                                     </blockquote>
                                 </div>
                             </div>
                             <div class="pbminfotech-box-img">
                                 <div class="pbmit-featured-wrapper">
-                                    <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/testimonail/testimonial-02.jpg" class="img-fluid" alt="">
+                                    <img src="<?= get_template_directory_uri() ?>/assets/images/phanhoi/phan-hoi-2.png" class="img-fluid" alt="">
                                 </div>
                             </div>
                             <div class="pbminfotech-box-author">
-                                <h3 class="pbminfotech-box-title">Jennifer Smith</h3>
-                                <span class="pbmit-designation">Làm trắng răng</span>
+                                <h3 class="pbminfotech-box-title">Chị Cathy Nguyễn</h3>
+                                <span class="pbmit-designation">Bọc răng sứ</span>
                             </div>
                         </div>
                     </article>
@@ -662,18 +661,18 @@ get_header();
                             <div class="pbminfotech-box-content">
                                 <div class="pbminfotech-box-desc">
                                     <blockquote class="pbminfotech-testimonial-text">
-                                        <p>Tôi rất trân trọng sự tử tế và sự chăm sóc tốt mà bạn đã dành cho tôi. Các liệu trình chăm sóc bảo dưỡng đã mang lại sự kỳ diệu cho tôi. Cảm ơn bạn rất nhiều. Hãy thưởng thức những viên sô cô la này nhé.</p>
+                                        <p>Ban đầu mình muốn bọc sứ, nhưng răng mình đều nên bác sĩ khuyến dán Veneer để bảo tồn răng gốc. Sau 3 ngày thì giờ đây mình đã có 1 bộ răng trắng, sáng, rất nhiên</p>
                                     </blockquote>
                                 </div>
                             </div>
                             <div class="pbminfotech-box-img">
                                 <div class="pbmit-featured-wrapper">
-                                    <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/testimonail/testimonial-03.jpg" class="img-fluid" alt="">
+                                    <img src="<?= get_template_directory_uri() ?>/assets/images/phanhoi/phan-hoi-3.png" class="img-fluid" alt="">
                                 </div>
                             </div>
                             <div class="pbminfotech-box-author">
-                                <h3 class="pbminfotech-box-title">Paul Hill</h3>
-                                <span class="pbmit-designation">Chỉnh nha</span>
+                                <h3 class="pbminfotech-box-title">Anh Phong Lê</h3>
+                                <span class="pbmit-designation">Dán sứ Veneer</span>
                             </div>
                         </div>
                     </article>
@@ -692,24 +691,34 @@ get_header();
                 <div class="appoinment-one-bg">
                     <div class="pbmit-heading-subheading">
                         <h4 class="pbmit-subtitle">Nhận cuộc hẹn</h4>
-                        <h2 class="pbmit-title">Để tìm được nha sĩ phù hợp<br> Hãy đặt lịch hẹn với bác sĩ của bạn.</h2>
+                        <h2 class="pbmit-title">Hãy đặt lịch hẹn với bác sĩ của SGC Dental Center</h2>
                     </div>
                     <form>
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="text" name="your-name" class="form-control" placeholder="Tên của bạn *">
+                                <input type="text" name="your-name" class="form-control" placeholder="Tên (Bắc buộc)">
                             </div>
                             <div class="col-sm-6">
-                                <input type="text" name="phone Number" class="form-control" placeholder="Số điện thoại">
+                                <input type="text" name="phone Number" class="form-control" placeholder="Số điện thoại (bắt buộc)">
                             </div>
                             <div class="col-sm-6">
-                                <input type="email" name="your-email" class="form-control" placeholder="Email của bạn *">
+                                <input type="email" name="your-email" class="form-control" placeholder="Số Zalo, Viber (Không bắt buộc)">
                             </div>
-                            <div class="col-sm-6">
-                                <input type="text" name="subject" class="form-control" placeholder="Chủ đề">
+                            <div class="col-sm-6" >
+                                <select class="form-control" name="service" id="service" style="color: #666; border: 1px solid #ccc; border-radius: 3px; padding: 3px;">
+                                    <option disabled selected>Dịch vụ</option>
+                                    <option value="boc-rang-su">Bọc răng sứ</option>
+                                    <option value="trong-rang-implant">Trồng răng Implant</option>
+                                    <option value="dan-su-veneer">Dán sứ Veneer</option>
+                                    <option value="nieng-rang">Niềng răng</option>
+                                    <option value="nho-rang">Nhổ răng</option>
+                                    <option value="chua-tuy">Chữa Tủy</option>
+                                    <option value="tram-rang">Trám răng</option>
+                                    <option value="cao-voi-rang">Cạo vôi răng</option>
+                                </select>
                             </div>
                             <div>
-                                <textarea name="message" cols="40" rows="5" class="form-control" placeholder="Lời nhắn"></textarea>
+                                <textarea name="message" cols="40" rows="5" class="form-control" placeholder="Nội dung tư vấn (không bắt buộc)"></textarea>
                             </div>
                             <div>
                                 <button type="submit" class="pbmit-btn pbmit-btn-outline-global">Gửi tin nhắn</button>
@@ -719,7 +728,11 @@ get_header();
                 </div>
             </div>
             <div class="col-md-12 col-lg-6">
-                <style>.appoinment-one-img:before {background-image: url(<?= get_template_directory_uri() .'/assets/images/home-dental/tam-4.jpg' ?>);}</style>
+                <style>
+                    .appoinment-one-img:before {
+                        background-image: url(<?= get_template_directory_uri() . '/assets/images/home-dental/tam-4.jpg' ?>);
+                    }
+                </style>
                 <div class="appoinment-one-img"></div>
                 <div class="pbmit-ihbox-style-3  pbmit-col-stretched-right">
                     <div class="pbmit-ihbox-box">
@@ -817,10 +830,9 @@ get_header();
     <div class="container">
         <div class="pbmit-heading-subheading text-center">
             <h4 class="pbmit-subtitle">Tin tức</h4>
-            <h2 class="pbmit-title">Đọc các tin mới nhất của chúng tôi</h2>
+            <h2 class="pbmit-title">Đọc các tin tức mới nhất về Nha khoa SGC</h2>
             <div class="pbmit-heading-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut<br> labore t dolore magna aliqua. </p>
+                <p>Tin tức nơi Nha khoa cung cấp các kiến thức, các phản hồi, các ca răng đã làm tại nha khoa, giúp khách hàng có cái nhìn tổng quan hơn về SGC Dental</p>
             </div>
         </div>
         <div class="row">

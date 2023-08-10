@@ -66,13 +66,11 @@
 					<div class="widget">
 						<h2 class="widget-title">Về chúng tôi</h2>
 						<div class="textwidget">
-							<p>Contrary to popular belief, Lorem simply random text. It has roots in a piece of
-								classical Latin literature.</p>
+							<p>Trung tâm Nha khoa Quốc tế SGC Dental Center </p>
 						</div>
 						<div class="pbmit-contact-widget-lines">
-							<div class="pbmit-contact-widget-line pbmit-contact-widget-address">Địa chỉ: 123 Đinh Bộ Lĩnh, P. 24, Q. Bình Thạnh, TP. Hồ Chí Minh</div>
-							<div class="pbmit-contact-widget-line pbmit-contact-widget-phone">Điện thoại: 0123-456-789</div>
-							<div class="pbmit-contact-widget-line pbmit-contact-widget-email">E-mail: info@yourdomain.com</div>
+							<div class="pbmit-contact-widget-line pbmit-contact-widget-address">Địa chỉ: Số 34, đường Hồ Biểu Chánh, phường 11, quận Phú Nhuận, Tp.HCM</div>
+							<div class="pbmit-contact-widget-line pbmit-contact-widget-phone">Điện thoại: <a href="tel:02899959597" style="color:rgba(255,255,255,.9)">028 999 59597</a></div>
 						</div>
 					</div>
 				</div>
@@ -81,11 +79,9 @@
 						<h2 class="widget-title">Thông tin</h2>
 						<div class="textwidget">
 							<ul>
-								<li><a href="#">Về chúng tôi</a></li>
-								<li><a href="#">Phòng khám</a></li>
-								<li><a href="#">Tin tức</a></li>
-								<li><a href="#">Chính sách bảo mật</a></li>
-								<li><a href="#">Câu hỏi thường gặp</a></li>
+								<li><a href="#">Trang chủ</a></li>
+								<li><a href="#">Dịch vụ</a></li>
+								<li><a href="#">Kiểm tra bảo hành</a></li>
 							</ul>
 						</div>
 					</div>
@@ -134,16 +130,12 @@
 							<div class="pbmit-timelist-wrapper">
 								<ul class="pbmit-timelist-list">
 									<li>
-										<span class="pbmit-timelist-li-title">Thứ 2 – Thứ 6</span>
-										<span class="pbmit-timelist-li-value">10:00 – 18:00</span>
-									</li>
-									<li>
-										<span class="pbmit-timelist-li-title">Thứ 7</span>
-										<span class="pbmit-timelist-li-value">10:00 – 12:30</span>
+										<span class="pbmit-timelist-li-title">Thứ 2 – Thứ 7</span>
+										<span class="pbmit-timelist-li-value">8:00 - 20:00</span>
 									</li>
 									<li>
 										<span class="pbmit-timelist-li-title">Chủ nhật</span>
-										<span class="pbmit-timelist-li-value">Đóng cửa</span>
+										<span class="pbmit-timelist-li-value">7:30 - 21:00</span>
 									</li>
 								</ul>
 							</div>
@@ -159,7 +151,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="pbmit-footer-copyright-text-area"> Copyright © 2023
-							<a href="#">Detal VN</a>, All Rights Reserved.
+							<a href="/">Detal VN</a>, All Rights Reserved.
 						</div>
 					</div>
 				</div>
