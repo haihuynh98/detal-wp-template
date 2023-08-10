@@ -79,36 +79,35 @@ get_header();
             <div class="col-md-12 col-lg-6 ">
                 <div class="pbmit-heading-subheading">
                     <h4 class="pbmit-subtitle">Về chúng tôi</h4>
-                    <h2 class="pbmit-title">Trung Tâm Răng Hàm Mặt Bệnh Viện Trung Ương</h2>
+                    <h2 class="pbmit-title">Trung tâm Nha khoa Quốc tế SGC Dental Center</h2>
                     <div class="pbmit-heading-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore t dolore magna aliqua. Ut enim ad minim veniam quis. </p>
+                        <p>Là một trong những nha khoa uy tín nhất tại Hồ Chí Minh. Với sự mệnh là mang đến sự chắc khỏe, thẩm mỹ về răng miệng cho hàng triệu người dân Việt Nam trong và ngoài nước.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
                         <ul class="list-group list-group-borderless">
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Chăm sóc định kỳ và y tế
+                                <i class="fa fa-check"></i> Đội ngũ bác sĩ hơn 15 năm kinh nghiệm
                             </li>
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Sự xuất sắc trong chăm sóc sức khỏe mỗi lúc
+                                <i class="fa fa-check"></i> Chuyên viên tư vấn nhiệt tình, chu đáo
                             </li>
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Xây dựng môi trường lành mạnh.
+                                <i class="fa fa-check"></i> Công nghệ hiện đại - Tiên tiến
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-6">
                         <ul class="list-group list-group-borderless">
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Chăm sóc định kỳ và y tế
+                                <i class="fa fa-check"></i> Chăm sóc răng miệng định kỳ
                             </li>
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Sự xuất sắc trong chăm sóc sức khỏe mỗi lúc
+                                <i class="fa fa-check"></i> Thẩm mỹ răng sứ - Trắng sáng tự nhiên
                             </li>
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Xây dựng môi trường lành mạnh.
+                                <i class="fa fa-check"></i> Trồng răng implant - Phục hồi ăn nhai.
                             </li>
                         </ul>
                     </div>
@@ -125,7 +124,7 @@ get_header();
                                     </div>
                                     <div class="pbmit-ihbox-contents">
                                         <div class="pbmit-ihbox-heading">
-                                            <h2 class="vc_custom_heading">25 Năm</h2>
+                                            <h2 class="vc_custom_heading">15 Năm</h2>
                                         </div>
                                         <div class="pbmit-ihbox-content">kinh nghiệm chăm sóc răng miệng </div>
                                     </div>
@@ -171,10 +170,9 @@ get_header();
     <div class="container">
         <div class="pbmit-heading-subheading text-center">
             <h4 class="pbmit-subtitle">Dịch vụ của chúng tôi</h4>
-            <h2 class="pbmit-title">Những gì chúng tôi cung cấp cho bạn</h2>
+            <h2 class="pbmit-title">Những dịch vụ phổ biến tại Nha khoa SGC Dental Center</h2>
             <div class="pbmit-heading-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut<br> labore t dolore magna aliqua. </p>
+                <p>Tại Nha khoa SGC Dental Center, chúng tôi có đầy đủ các dịch vụ từ Điều trị bệnh lý đến Phục hình thẩm mỹ</p>
             </div>
         </div>
         <div class="swiper-slider" data-arrows-class="team3-arrow" data-autoplay="false" data-dots="true" data-arrows="true" data-columns="3" data-margin="30" data-effect="slide">
@@ -191,10 +189,10 @@ get_header();
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Nha khoa tổng quát</a>
+                                        <a href="services-details.html">Bọc sứ thẩm mỹ</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Bệnh nhân có thể được điều trị chung với việc ngồi riêng.</p>
+                                        <p>Giúp răng bạn trắng, sáng, đều hơn mà vẫn đẹp tự nhiên</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
@@ -218,10 +216,10 @@ get_header();
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Nha khoa thẩm mỹ</a>
+                                        <a href="services-details.html">Trồng răng Implant</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Nha khoa thẩm mỹ là làm cho răng của bạn đẹp tự nhiên.</p>
+                                        <p>Phục hồi chức năng ăn nhai, thẩm mỹ khuôn mặt</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
@@ -245,10 +243,10 @@ get_header();
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Cấy ghép Răng</a>
+                                        <a href="services-details.html">Dán sứ Veneer</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Cấy ghép Răng là một thủ tục thay thế răng bị mất.</p>
+                                        <p>Sử dụng công nghệ mới nhất của Đức, bảo tồn răng gốc đến 95%</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
@@ -272,10 +270,10 @@ get_header();
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Chỉnh Hàm</a>
+                                        <a href="services-details.html">Tẩy trắng răng</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium sunt fugit</p>
+                                        <p>Giúp răng trắng sáng hơn với chi phí phải chăng</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
@@ -299,10 +297,10 @@ get_header();
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Làm trắng răng</a>
+                                        <a href="services-details.html">Trám răng</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Quy trình làm trắng răng laser cho phép chúng tôi làm trắng răng.</p>
+                                        <p>Điều trị - Phục hồi răng nhanh chống</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
@@ -326,10 +324,10 @@ get_header();
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Làm sạch răng</a>
+                                        <a href="services-details.html">Nhổ răng khôn</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Làm sạch sâu răng của bạn là một thủ tục để điều trị nha chu.</p>
+                                        <p>Sử dụng công nghệ Laser giúp không sưng, không đau,nhức</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
