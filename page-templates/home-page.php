@@ -185,7 +185,7 @@ get_header();
                                 <div class="pbminfotech-box-content-inner">
                                     <div class="pbmit-service-icon">
                                         <div class="pbmit-service-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-chair"></i>
+                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-insurance"></i>
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
@@ -212,7 +212,7 @@ get_header();
                                 <div class="pbminfotech-box-content-inner">
                                     <div class="pbmit-service-icon">
                                         <div class="pbmit-service-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-insurance"></i>
+                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-prosthesis"></i>
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
@@ -239,7 +239,7 @@ get_header();
                                 <div class="pbminfotech-box-content-inner">
                                     <div class="pbmit-service-icon">
                                         <div class="pbmit-service-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-prosthesis"></i>
+                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-insurance"></i>
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
@@ -339,262 +339,11 @@ get_header();
                         </div>
                     </article>
                 </div>
-                <div class="swiper-slide">
-                    <!-- Slide7 -->
-                    <article class="pbmit-service-style-1">
-                        <div class="pbminfotech-post-item">
-                            <div class="pbminfotech-box-content">
-                                <div class="pbminfotech-box-content-inner">
-                                    <div class="pbmit-service-icon">
-                                        <div class="pbmit-service-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-pills"></i>
-                                        </div>
-                                    </div>
-                                    <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Paradontosis</a>
-                                    </h3>
-                                    <div class="pbmit-service-content">
-                                        <p>Paradontosis liên quan đến vệ sinh răng miệng và làm sạch răng chuyên nghiệp.</p>
-                                    </div>
-                                    <div class="pbmit-service-btn">
-                                        <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc Thêm</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-slide">
-                    <!-- Slide8 -->
-                    <article class="pbmit-service-style-1">
-                        <div class="pbminfotech-post-item">
-                            <div class="pbminfotech-box-content">
-                                <div class="pbminfotech-box-content-inner">
-                                    <div class="pbmit-service-icon">
-                                        <div class="pbmit-service-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-dental-insurance-1"></i>
-                                        </div>
-                                    </div>
-                                    <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Bảo vệ khoang</a>
-                                    </h3>
-                                    <div class="pbmit-service-content">
-                                        <p>Chiến đấu với khoang với kem đánh răng bảo vệ khoang của chúng tôi.</p>
-                                    </div>
-                                    <div class="pbmit-service-btn">
-                                        <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc Thêm</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-slide">
-                    <!-- Slide9 -->
-                    <article class="pbmit-service-style-1">
-                        <div class="pbminfotech-post-item">
-                            <div class="pbminfotech-box-content">
-                                <div class="pbminfotech-box-content-inner">
-                                    <div class="pbmit-service-icon">
-                                        <div class="pbmit-service-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-girl"></i>
-                                        </div>
-                                    </div>
-                                    <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Radiographs</a>
-                                    </h3>
-                                    <div class="pbmit-service-content">
-                                        <p>Images of your teeth that your dentist uses to your oral health.
-                                        </p>
-                                    </div>
-                                    <div class="pbmit-service-btn">
-                                        <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc Thêm</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
             </div>
         </div>
     </div>
 </section>
 <!-- Service End -->
-
-<!-- Counter  Start -->
-<section class="counter-section-one">
-    <div class="container">
-        <div class="counter-one-bg">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="pbminfotech-ele-fid-style-1">
-                        <div class="pbmit-fld-contents d-flex align-items-center">
-                            <div class="pbmit-sbox-icon-wrapper">
-                                <i class="pbmit-dentiq-icon pbmit-dentiq-icon-doctor-1"></i>
-                            </div>
-                            <div class="pbmit-fld-wrap">
-                                <h4 class="pbmit-fid-inner">
-                                    <span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="100" data-interval="5" data-before="" data-before-style="" data-after="" data-after-style="">100</span>
-                                    <span class="pbmit-fid-sub"></span>
-                                </h4>
-                                <h3 class="pbmit-fid-title"><span>Bác sĩ chuyên dụng<br></span></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="pbminfotech-ele-fid-style-1">
-                        <div class="pbmit-fld-contents d-flex align-items-center">
-                            <div class="pbmit-sbox-icon-wrapper">
-                                <i class="pbmit-dentiq-icon pbmit-dentiq-icon-chair"></i>
-                            </div>
-                            <div class="pbmit-fld-wrap">
-                                <h4 class="pbmit-fid-inner">
-                                    <span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="150" data-interval="5" data-before="" data-before-style="" data-after="" data-after-style="">150</span>
-                                    <span class="pbmit-fid-sub"></span>
-                                </h4>
-                                <h3 class="pbmit-fid-title"><span>Phòng khám<br></span></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="pbminfotech-ele-fid-style-1">
-                        <div class="pbmit-fld-contents d-flex align-items-center">
-                            <div class="pbmit-sbox-icon-wrapper">
-                                <i class="pbmit-dentiq-icon pbmit-dentiq-icon-tooth-1"></i>
-                            </div>
-                            <div class="pbmit-fld-wrap">
-                                <h4 class="pbmit-fid-inner">
-                                    <span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="250" data-interval="5" data-before="" data-before-style="" data-after="" data-after-style="">250</span>
-                                    <span class="pbmit-fid-sub"></span>
-                                </h4>
-                                <h3 class="pbmit-fid-title"><span>Giải thưởng<br></span></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="pbminfotech-ele-fid-style-1">
-                        <div class="pbmit-fld-contents d-flex align-items-center">
-                            <div class="pbmit-sbox-icon-wrapper">
-                                <i class="pbmit-dentiq-icon pbmit-dentiq-icon-family"></i>
-                            </div>
-                            <div class="pbmit-fld-wrap">
-                                <h4 class="pbmit-fid-inner">
-                                    <span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="1500" data-interval="5" data-before="" data-before-style="" data-after="" data-after-style="">1500</span>
-                                    <span class="pbmit-fid-sub"></span>
-                                </h4>
-                                <h3 class="pbmit-fid-title"><span>Khách hàng tin dùng<br></span></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Counter End -->
-
-<!-- About us Start -->
-<section class="about-us-section-one section-lgb" style="background-image:url(<?= get_template_directory_uri() . '/assets/images/home-dental/tam-3.jpg' ?>)">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-lg-6"></div>
-            <div class="col-md-12 col-lg-6">
-                <div class="pbmit-heading-subheading">
-                    <h4 class="pbmit-subtitle">Câu chuyện của chúng tôi</h4>
-                    <h2 class="pbmit-title">Các cột mốc trong ngành chăm sóc sức khỏe răng miệng.</h2>
-                    <div class="pbmit-heading-content">
-                        <p>Chương trình Chữa bệnh Y học tham gia hội chợ sinh viên tại các địa điểm được chọn. Bạn luôn có thể Đặt lịch hẹn cho các sự kiện sắp tới. Bạn có thể đăng ký nhận thông báo miễn phí.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="pbmit-ihbox-style-4">
-                            <div class="pbmit-ihbox-contents">
-                                <div class="pbmit-ihbox-headingicon d-flex align-items-center">
-                                    <div class="pbmit-ihbox-icon">
-                                        <div class="pbmit-ihbox-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-molar"></i>
-                                        </div>
-                                    </div>
-                                    <div class="pbmit-ihbox-contents">
-                                        <div class="pbmit-ihbox-heading">
-                                            <h2 class="vc_custom_heading">Thăm khám răng trẻ em</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="pbmit-ihbox-style-4">
-                            <div class="pbmit-ihbox-contents">
-                                <div class="pbmit-ihbox-headingicon d-flex align-items-center">
-                                    <div class="pbmit-ihbox-icon">
-                                        <div class="pbmit-ihbox-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-dentist"></i>
-                                        </div>
-                                    </div>
-                                    <div class="pbmit-ihbox-contents">
-                                        <div class="pbmit-ihbox-heading">
-                                            <h2 class="vc_custom_heading">Phẫu thuật răng miệng</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="pbmit-ihbox-style-4">
-                            <div class="pbmit-ihbox-contents">
-                                <div class="pbmit-ihbox-headingicon d-flex align-items-center">
-                                    <div class="pbmit-ihbox-icon">
-                                        <div class="pbmit-ihbox-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-dental-insurance-1"></i>
-                                        </div>
-                                    </div>
-                                    <div class="pbmit-ihbox-contents">
-                                        <div class="pbmit-ihbox-heading">
-                                            <h2 class="vc_custom_heading">Răng giả</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="pbmit-ihbox-style-4">
-                            <div class="pbmit-ihbox-contents">
-                                <div class="pbmit-ihbox-headingicon d-flex align-items-center">
-                                    <div class="pbmit-ihbox-icon">
-                                        <div class="pbmit-ihbox-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-braces-1"></i>
-                                        </div>
-                                    </div>
-                                    <div class="pbmit-ihbox-contents">
-                                        <div class="pbmit-ihbox-heading">
-                                            <h2 class="vc_custom_heading">Chỉnh nha</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="pbmit-btn">Đọc Thêm</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- About us End -->
 
 <!-- Testimonial Start -->
 <section class="section-lg testimonial-one-bg">
@@ -704,7 +453,7 @@ get_header();
                             <div class="col-sm-6">
                                 <input type="email" name="your-email" class="form-control" placeholder="Số Zalo, Viber (Không bắt buộc)">
                             </div>
-                            <div class="col-sm-6" >
+                            <div class="col-sm-6">
                                 <select class="form-control" name="service" id="service" style="color: #666; border: 1px solid #ccc; border-radius: 3px; padding: 3px;">
                                     <option disabled selected>Dịch vụ</option>
                                     <option value="boc-rang-su">Bọc răng sứ</option>
@@ -762,63 +511,21 @@ get_header();
 <!-- Client Start -->
 <section class="client-section-one section-md">
     <div class="container">
-        <div class="swiper-slider" data-arrows-class="team3-arrow" data-autoplay="false" data-dots="false" data-arrows="true" data-columns="5" data-margin="30" data-effect="slide">
+        <div class="swiper-slider" data-arrows-class="team3-arrow" data-autoplay="false" data-dots="false" data-arrows="true" data-columns="3" data-margin="30" data-effect="slide">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <!-- Slide1 -->
-                    <article class="pbmit-client-style-1">
-                        <div class="pbmit-client-wrapper">
-                            <h4 class="pbmit-hide">Client 6</h4>
-                            <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/client/client-01.png" class="img-fluid" alt="">
+                <?php foreach (get_field('partners') as $partner) : ?>
+                    <div class="swiper-slide">
+                        <!-- Slide1 -->
+                        <article class="pbmit-client-style-1">
+                            <div class="pbmit-client-wrapper">
+                                <h4 class="pbmit-hide"><?= $partner['company_name']?></h4>
+                                <div class="pbmit-featured-wrapper">
+                                    <img src="<?= $partner['logo']?>" class="img-fluid" alt="">
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-slide">
-                    <!-- Slide2 -->
-                    <article class="pbmit-client-style-1">
-                        <div class="pbmit-client-wrapper">
-                            <h4 class="pbmit-hide">Client 1</h4>
-                            <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/client/client-02.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-slide">
-                    <!-- Slide3 -->
-                    <article class="pbmit-client-style-1">
-                        <div class="pbmit-client-wrapper">
-                            <h4 class="pbmit-hide">Client 2</h4>
-                            <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/client/client-03.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-slide">
-                    <!-- Slide4 -->
-                    <article class="pbmit-client-style-1">
-                        <div class="pbmit-client-wrapper">
-                            <h4 class="pbmit-hide">Client 3</h4>
-                            <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/client/client-04.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-slide">
-                    <!-- Slide5 -->
-                    <article class="pbmit-client-style-1">
-                        <div class="pbmit-client-wrapper">
-                            <h4 class="pbmit-hide">Client 4</h4>
-                            <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/client/client-05.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                        </article>
+                    </div>
+                <?php endforeach;?>
             </div>
         </div>
     </div>
@@ -844,7 +551,7 @@ get_header();
                                 <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-01.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="pbmit-meta-category">
-                                <a href="blog-classic.html" rel="category tag">Teeth</a>
+                                <a href="#" rel="category tag">Teeth</a>
                             </div>
                         </div>
                         <div class="pbminfotech-box-content">
@@ -856,7 +563,7 @@ get_header();
                                 </div>
                             </div>
                             <h3 class="pbmit-post-title">
-                                <a href="blog-classic.html">Dental Hygiene for Children</a>
+                                <a href="#">Dental Hygiene for Children</a>
                             </h3>
                             <div class="pbminfotech-box-desc">
                                 <div class="pbminfotech-box-desc-text">
@@ -864,7 +571,7 @@ get_header();
                                         eget lacinia odio sem nec elit. Morbi leo risus, porta ac
                                         consectetur ac, vestibu lum at eros. Nulla vitae elit libero, a
                                         pharetra augue. </p>
-                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="blog-classic.html">Đọc Thêm</a>
+                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="#">Đọc Thêm</a>
                                 </div>
                             </div>
                         </div>
@@ -879,7 +586,7 @@ get_header();
                                 <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-02.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="pbmit-meta-category">
-                                <a href="blog-classic.html" rel="category tag">Oral</a>
+                                <a href="#" rel="category tag">Oral</a>
                             </div>
                         </div>
                         <div class="pbminfotech-box-content">
@@ -891,7 +598,7 @@ get_header();
                                 </div>
                             </div>
                             <h3 class="pbmit-post-title">
-                                <a href="blog-classic.html">Improvements In Technology</a>
+                                <a href="#">Improvements In Technology</a>
                             </h3>
                             <div class="pbminfotech-box-desc">
                                 <div class="pbminfotech-box-desc-text">
@@ -899,7 +606,7 @@ get_header();
                                         eget lacinia odio sem nec elit. Morbi leo risus, porta ac
                                         consectetur ac, vestibu lum at eros. Nulla vitae elit libero, a
                                         pharetra augue. </p>
-                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="blog-classic.html">Đọc Thêm</a>
+                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="#">Đọc Thêm</a>
                                 </div>
                             </div>
                         </div>
@@ -914,7 +621,7 @@ get_header();
                                 <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-03.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="pbmit-meta-category">
-                                <a href="blog-classic.html" rel="category tag">Implants</a>
+                                <a href="#" rel="category tag">Implants</a>
                             </div>
                         </div>
                         <div class="pbminfotech-box-content">
@@ -926,7 +633,7 @@ get_header();
                                 </div>
                             </div>
                             <h3 class="pbmit-post-title">
-                                <a href="blog-classic.html">You Want Know About Dentist</a>
+                                <a href="#">You Want Know About Dentist</a>
                             </h3>
                             <div class="pbminfotech-box-desc">
                                 <div class="pbminfotech-box-desc-text">
@@ -934,7 +641,7 @@ get_header();
                                         eget lacinia odio sem nec elit. Morbi leo risus, porta ac
                                         consectetur ac, vestibu lum at eros. Nulla vitae elit libero, a
                                         pharetra augue. </p>
-                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="blog-classic.html">Đọc Thêm</a>
+                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="#">Đọc Thêm</a>
                                 </div>
                             </div>
                         </div>

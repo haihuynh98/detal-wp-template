@@ -21,7 +21,7 @@
 			<div class="row align-items-center">
 				<div class="col-md-12 col-lg-3">
 					<div class="pbmit-footer-boxes-1">
-						<img class="pbmit-footerlogo" src="<?= get_template_directory_uri() ?>/assets/images/logo-white-1.png" alt="">
+						<img class="pbmit-footerlogo" src="<?= get_template_directory_uri() ?>/assets/images/logo-white.png" alt="">
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-6">

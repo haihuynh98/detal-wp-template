@@ -12,7 +12,7 @@
 
 
 $menu_items = get_detal_top_menu();
-
+$logo_link = get_custom_logo_link();
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -90,7 +90,9 @@ $menu_items = get_detal_top_menu();
 									<div class="site-branding">
 										<span class="site-title">
 											<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-												<img class="logo-img" src="<?= get_template_directory_uri() ?>/assets/images/logo.png" alt="">
+												<?php if ($logo_link) : ?>
+													<img class="logo-img" src="<?= esc_url($logo_link) ?>" alt="logo">
+												<?php endif; ?>
 											</a>
 										</span>
 									</div>

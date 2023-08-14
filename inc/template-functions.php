@@ -228,3 +228,20 @@ function get_related_posts() {
     // Trả về các ID của bài viết liên quan
     return $related_posts_ids;
 }
+
+function enqueue_admin_flaticon_style() {
+    wp_enqueue_style('flaticon-admin', get_template_directory_uri() . '/assets/css/flaticon.css', array(), '1.0.0', 'all');
+    wp_enqueue_style('custom-admin', get_template_directory_uri() . '/assets/css/admin.css');
+}
+add_action('admin_enqueue_scripts', 'enqueue_admin_flaticon_style');
+
+function get_custom_logo_link() {
+    $custom_logo_id = get_theme_mod('custom_logo'); // Lấy ID của logo từ Customizer
+    $logo = wp_get_attachment_image_src($custom_logo_id, 'full'); // Lấy thông tin hình ảnh logo
+
+    if ($logo) {
+        return esc_url($logo[0]);
+    }
+
+    return false;
+}
