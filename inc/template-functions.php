@@ -55,7 +55,9 @@ function detal_vn_enqueue_scripts()
 	wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0.0', 'all');
 	wp_enqueue_style('responsive', get_template_directory_uri() . '/assets/css/responsive.css', array(), '1.0.0', 'all');
 	wp_enqueue_style('revolution', get_template_directory_uri() . '/assets/revolution/rs6.css', array(), '6.4.6', 'all');
-
+	if (is_page_template('page-templates/check-warranty-page.php')) {
+		wp_enqueue_style('warranty', get_template_directory_uri() . '/assets/css/warranty-page.css', array(), '1.0.0', 'all');
+	}
 
 	// Đăng ký và nạp các script cần thiết
 	wp_enqueue_script('jquery-min', get_template_directory_uri() . '/assets/js/jquery.min.js', array(), '3.6.0', true);
@@ -165,83 +167,183 @@ function set_default_language()
 }
 add_filter('locale', 'set_default_language');
 
-function get_related_posts() {
-    global $post;
-    
-    // Lấy danh sách các thẻ hoặc categories của bài viết hiện tại
-    $post_tags = wp_get_post_tags($post->ID);
-    $post_categories = get_the_category($post->ID);
-    
-    // Tạo một mảng chứa các ID của bài viết liên quan
-    $related_posts_ids = array();
-    
-    // Lấy các bài viết liên quan dựa trên thẻ của bài viết hiện tại
-    if ($post_tags) {
-        $tag_ids = array();
-        foreach ($post_tags as $tag) {
-            $tag_ids[] = $tag->term_id;
-        }
+function get_related_posts()
+{
+	global $post;
 
-        $related_posts_args = array(
-            'tag__in' => $tag_ids,
-            'post__not_in' => array($post->ID),
-            'posts_per_page' => 3, // Số bài viết liên quan muốn hiển thị
-            'ignore_sticky_posts' => 1,
-        );
+	// Lấy danh sách các thẻ hoặc categories của bài viết hiện tại
+	$post_tags = wp_get_post_tags($post->ID);
+	$post_categories = get_the_category($post->ID);
 
-        $related_posts_query = new WP_Query($related_posts_args);
+	// Tạo một mảng chứa các ID của bài viết liên quan
+	$related_posts_ids = array();
 
-        if ($related_posts_query->have_posts()) {
-            while ($related_posts_query->have_posts()) {
-                $related_posts_query->the_post();
-                $related_posts_ids[] = get_the_ID();
-            }
-            wp_reset_postdata();
-        }
-    }
+	// Lấy các bài viết liên quan dựa trên thẻ của bài viết hiện tại
+	if ($post_tags) {
+		$tag_ids = array();
+		foreach ($post_tags as $tag) {
+			$tag_ids[] = $tag->term_id;
+		}
 
-    // Lấy các bài viết liên quan dựa trên categories của bài viết hiện tại
-    if ($post_categories && empty($related_posts_ids)) {
-        $category_ids = array();
-        foreach ($post_categories as $category) {
-            $category_ids[] = $category->term_id;
-        }
+		$related_posts_args = array(
+			'tag__in' => $tag_ids,
+			'post__not_in' => array($post->ID),
+			'posts_per_page' => 3, // Số bài viết liên quan muốn hiển thị
+			'ignore_sticky_posts' => 1,
+		);
 
-        $related_posts_args = array(
-            'category__in' => $category_ids,
-            'post__not_in' => array($post->ID),
-            'posts_per_page' => 3, // Số bài viết liên quan muốn hiển thị
-            'ignore_sticky_posts' => 1,
-        );
+		$related_posts_query = new WP_Query($related_posts_args);
 
-        $related_posts_query = new WP_Query($related_posts_args);
+		if ($related_posts_query->have_posts()) {
+			while ($related_posts_query->have_posts()) {
+				$related_posts_query->the_post();
+				$related_posts_ids[] = get_the_ID();
+			}
+			wp_reset_postdata();
+		}
+	}
 
-        if ($related_posts_query->have_posts()) {
-            while ($related_posts_query->have_posts()) {
-                $related_posts_query->the_post();
-                $related_posts_ids[] = get_the_ID();
-            }
-            wp_reset_postdata();
-        }
-    }
+	// Lấy các bài viết liên quan dựa trên categories của bài viết hiện tại
+	if ($post_categories && empty($related_posts_ids)) {
+		$category_ids = array();
+		foreach ($post_categories as $category) {
+			$category_ids[] = $category->term_id;
+		}
 
-    // Trả về các ID của bài viết liên quan
-    return $related_posts_ids;
+		$related_posts_args = array(
+			'category__in' => $category_ids,
+			'post__not_in' => array($post->ID),
+			'posts_per_page' => 3, // Số bài viết liên quan muốn hiển thị
+			'ignore_sticky_posts' => 1,
+		);
+
+		$related_posts_query = new WP_Query($related_posts_args);
+
+		if ($related_posts_query->have_posts()) {
+			while ($related_posts_query->have_posts()) {
+				$related_posts_query->the_post();
+				$related_posts_ids[] = get_the_ID();
+			}
+			wp_reset_postdata();
+		}
+	}
+
+	// Trả về các ID của bài viết liên quan
+	return $related_posts_ids;
 }
 
-function enqueue_admin_flaticon_style() {
-    wp_enqueue_style('flaticon-admin', get_template_directory_uri() . '/assets/css/flaticon.css', array(), '1.0.0', 'all');
-    wp_enqueue_style('custom-admin', get_template_directory_uri() . '/assets/css/admin.css');
+function enqueue_admin_flaticon_style()
+{
+	wp_enqueue_style('flaticon-admin', get_template_directory_uri() . '/assets/css/flaticon.css', array(), '1.0.0', 'all');
+	wp_enqueue_style('custom-admin', get_template_directory_uri() . '/assets/css/admin.css');
 }
 add_action('admin_enqueue_scripts', 'enqueue_admin_flaticon_style');
 
-function get_custom_logo_link() {
-    $custom_logo_id = get_theme_mod('custom_logo'); // Lấy ID của logo từ Customizer
-    $logo = wp_get_attachment_image_src($custom_logo_id, 'full'); // Lấy thông tin hình ảnh logo
+function get_custom_logo_link()
+{
+	$custom_logo_id = get_theme_mod('custom_logo'); // Lấy ID của logo từ Customizer
+	$logo = wp_get_attachment_image_src($custom_logo_id, 'full'); // Lấy thông tin hình ảnh logo
 
-    if ($logo) {
-        return esc_url($logo[0]);
+	if ($logo) {
+		return esc_url($logo[0]);
+	}
+
+	return false;
+}
+
+
+// Register Custom Post Type
+function custom_warranty_management()
+{
+
+	$labels = array(
+		'name'                  => _x('Warranty Management', 'Post Type General Name', 'text_domain'),
+		'singular_name'         => _x('Warranty Management', 'Post Type Singular Name', 'text_domain'),
+		'menu_name'             => __('Warranty Management', 'text_domain'),
+		'name_admin_bar'        => __('Warranty Management', 'text_domain'),
+		'archives'              => __('Item Archives', 'text_domain'),
+		'attributes'            => __('Item Attributes', 'text_domain'),
+		'parent_item_colon'     => __('Parent Item:', 'text_domain'),
+		'all_items'             => __('All Items', 'text_domain'),
+		'add_new_item'          => __('Add New Item', 'text_domain'),
+		'add_new'               => __('Add New', 'text_domain'),
+		'new_item'              => __('New Item', 'text_domain'),
+		'edit_item'             => __('Edit Item', 'text_domain'),
+		'update_item'           => __('Update Item', 'text_domain'),
+		'view_item'             => __('View Item', 'text_domain'),
+		'view_items'            => __('View Items', 'text_domain'),
+		'search_items'          => __('Search Item', 'text_domain'),
+		'not_found'             => __('Not found', 'text_domain'),
+		'not_found_in_trash'    => __('Not found in Trash', 'text_domain'),
+		'featured_image'        => __('Featured Image', 'text_domain'),
+		'set_featured_image'    => __('Set featured image', 'text_domain'),
+		'remove_featured_image' => __('Remove featured image', 'text_domain'),
+		'use_featured_image'    => __('Use as featured image', 'text_domain'),
+		'insert_into_item'      => __('Insert into item', 'text_domain'),
+		'uploaded_to_this_item' => __('Uploaded to this item', 'text_domain'),
+		'items_list'            => __('Items list', 'text_domain'),
+		'items_list_navigation' => __('Items list navigation', 'text_domain'),
+		'filter_items_list'     => __('Filter items list', 'text_domain'),
+	);
+	$args = array(
+		'label'                 => __('Warranty Management', 'text_domain'),
+		'description'           => __('Custom post type for Warranty Management', 'text_domain'),
+		'labels'                => $labels,
+		'supports'              => array('title'),
+		'taxonomies'            => array(),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-universal-access-alt', // Set the icon
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+		'show_in_rest'          => true,
+		'map_meta_cap'          => true,
+	);
+	register_post_type('warranty_management', $args);
+}
+add_action('init', 'custom_warranty_management', 0);
+
+// Add custom column to admin post list
+function custom_warranty_management_columns($columns) {
+    $columns['warranty_id'] = 'Warranty ID';
+    return $columns;
+}
+add_filter('manage_warranty_management_posts_columns', 'custom_warranty_management_columns');
+
+// Populate the custom column with data
+function custom_warranty_management_column_data($column, $post_id) {
+    if ($column === 'warranty_id') {
+        echo $post_id;
+    }
+}
+add_action('manage_warranty_management_posts_custom_column', 'custom_warranty_management_column_data', 10, 2);
+
+function get_warranty_management_post_by_id($post_id) {
+    $post = get_post($post_id);
+
+    if ($post && $post->post_type === 'warranty_management') {
+        return [
+			'name'=> get_field('name', $post_id),
+			'address'=> get_field('address', $post_id),
+			'phone'=> get_field('phone', $post_id),
+			'email'=> get_field('email', $post_id),
+			'date'=> get_field('date', $post_id),
+			'service'=> get_field('service', $post_id),
+			'service_detail'=> get_field('service_detail', $post_id),
+			'warranty_period'=> get_field('warranty_period', $post_id),
+			'warranty_coverage'=> get_field('warranty_coverage', $post_id),
+			'conditions'=> get_field('conditions', $post_id),
+			'care_instructions'=> get_field('care_instructions', $post_id),
+		];
     }
 
-    return false;
+    return null;
 }
