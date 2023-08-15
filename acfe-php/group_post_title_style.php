@@ -50,7 +50,7 @@ acf_add_local_field_group(array(
 			),
 			'uploader' => '',
 			'return_format' => 'url',
-			'acfe_thumbnail' => 1,
+			'acfe_thumbnail' => 0,
 			'min_width' => '',
 			'min_height' => '',
 			'min_size' => '',
@@ -87,7 +87,7 @@ acf_add_local_field_group(array(
 	'acfe_form' => 0,
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1691206230,
+	'modified' => 1692095417,
 ));
 
 endif;

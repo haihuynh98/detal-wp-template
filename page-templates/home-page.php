@@ -518,14 +518,14 @@ get_header();
                         <!-- Slide1 -->
                         <article class="pbmit-client-style-1">
                             <div class="pbmit-client-wrapper">
-                                <h4 class="pbmit-hide"><?= $partner['company_name']?></h4>
+                                <h4 class="pbmit-hide"><?= $partner['company_name'] ?></h4>
                                 <div class="pbmit-featured-wrapper">
-                                    <img src="<?= $partner['logo']?>" class="img-fluid" alt="">
+                                    <img src="<?= $partner['logo'] ?>" class="img-fluid" alt="">
                                 </div>
                             </div>
                         </article>
                     </div>
-                <?php endforeach;?>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
@@ -543,111 +543,37 @@ get_header();
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <article class="pbmit-blogbox-style-1">
-                    <div class="post-item">
-                        <div class="pbmit-featured-container">
-                            <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-01.jpg" class="img-fluid" alt="">
+            <?php foreach (get_recent_posts() as $post) : ?>
+                <div class="col-md-4">
+                    <article class="pbmit-blogbox-style-1">
+                        <div class="post-item">
+                            <div class="pbmit-featured-container">
+                                <div class="pbmit-featured-wrapper">
+                                    <img src="<?= $post['image'] ?>" class="img-fluid" alt="<?= $post['title'] ?>">
+                                </div>
                             </div>
-                            <div class="pbmit-meta-category">
-                                <a href="#" rel="category tag">Teeth</a>
-                            </div>
-                        </div>
-                        <div class="pbminfotech-box-content">
-                            <div class="pbmit-meta-container">
-                                <div class="pbmit-meta-date-wrapper pbmit-meta-line">
-                                    <div class="pbmit-meta-date">
-                                        <i class="pbmit-base-icon-calendar-1"></i> 23 Jan, 2019
+                            <div class="pbminfotech-box-content">
+                                <div class="pbmit-meta-container">
+                                    <div class="pbmit-meta-date-wrapper pbmit-meta-line">
+                                        <div class="pbmit-meta-date">
+                                            <i class="pbmit-base-icon-calendar-1"></i> <?= $post['date'] ?>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="pbmit-post-title">
+                                    <a href="<?= $post['link'] ?>"><?= $post['title'] ?></a>
+                                </h3>
+                                <div class="pbminfotech-box-desc">
+                                    <div class="pbminfotech-box-desc-text">
+                                        <p> <?= $post['excerpt'] ?></p>
+                                        <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="<?= $post['link'] ?>">Đọc Thêm</a>
                                     </div>
                                 </div>
                             </div>
-                            <h3 class="pbmit-post-title">
-                                <a href="#">Dental Hygiene for Children</a>
-                            </h3>
-                            <div class="pbminfotech-box-desc">
-                                <div class="pbminfotech-box-desc-text">
-                                    <p> Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-                                        eget lacinia odio sem nec elit. Morbi leo risus, porta ac
-                                        consectetur ac, vestibu lum at eros. Nulla vitae elit libero, a
-                                        pharetra augue. </p>
-                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="#">Đọc Thêm</a>
-                                </div>
-                            </div>
                         </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-md-4">
-                <article class="pbmit-blogbox-style-1">
-                    <div class="post-item">
-                        <div class="pbmit-featured-container">
-                            <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-02.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="pbmit-meta-category">
-                                <a href="#" rel="category tag">Oral</a>
-                            </div>
-                        </div>
-                        <div class="pbminfotech-box-content">
-                            <div class="pbmit-meta-container">
-                                <div class="pbmit-meta-date-wrapper pbmit-meta-line">
-                                    <div class="pbmit-meta-date">
-                                        <i class="pbmit-base-icon-calendar-1"></i> 22 Jan, 2019
-                                    </div>
-                                </div>
-                            </div>
-                            <h3 class="pbmit-post-title">
-                                <a href="#">Improvements In Technology</a>
-                            </h3>
-                            <div class="pbminfotech-box-desc">
-                                <div class="pbminfotech-box-desc-text">
-                                    <p> Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-                                        eget lacinia odio sem nec elit. Morbi leo risus, porta ac
-                                        consectetur ac, vestibu lum at eros. Nulla vitae elit libero, a
-                                        pharetra augue. </p>
-                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="#">Đọc Thêm</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-md-4">
-                <article class="pbmit-blogbox-style-1">
-                    <div class="post-item">
-                        <div class="pbmit-featured-container">
-                            <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/blog/blog-03.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="pbmit-meta-category">
-                                <a href="#" rel="category tag">Implants</a>
-                            </div>
-                        </div>
-                        <div class="pbminfotech-box-content">
-                            <div class="pbmit-meta-container">
-                                <div class="pbmit-meta-date-wrapper pbmit-meta-line">
-                                    <div class="pbmit-meta-date">
-                                        <i class="pbmit-base-icon-calendar-1"></i> 20 Jan, 2019
-                                    </div>
-                                </div>
-                            </div>
-                            <h3 class="pbmit-post-title">
-                                <a href="#">You Want Know About Dentist</a>
-                            </h3>
-                            <div class="pbminfotech-box-desc">
-                                <div class="pbminfotech-box-desc-text">
-                                    <p> Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-                                        eget lacinia odio sem nec elit. Morbi leo risus, porta ac
-                                        consectetur ac, vestibu lum at eros. Nulla vitae elit libero, a
-                                        pharetra augue. </p>
-                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="#">Đọc Thêm</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
+                    </article>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>

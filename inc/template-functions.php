@@ -391,3 +391,40 @@ function custom_warranty_redirect() {
     }
 }
 add_action('template_redirect', 'custom_warranty_redirect');
+
+function get_recent_posts() {
+    $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => 3,
+        'orderby' => 'date',
+        'order' => 'DESC',
+    );
+
+    $recent_posts = new WP_Query($args);
+    $posts_array = array();
+
+    if ($recent_posts->have_posts()) {
+        while ($recent_posts->have_posts()) {
+            $recent_posts->the_post();
+            $post_id = get_the_ID();
+            $post_title = get_the_title();
+            $post_excerpt = get_the_excerpt();
+            $post_date = get_the_date('F j, Y');
+            $post_image = get_the_post_thumbnail_url($post_id, 'medium');
+            $post_link = get_permalink();
+
+            $post_data = array(
+                'image' => $post_image,
+                'link' => $post_link,
+                'title' => $post_title,
+                'excerpt' => $post_excerpt,
+                'date' => $post_date,
+            );
+
+            $posts_array[] = $post_data;
+        }
+    }
+
+    wp_reset_postdata();
+    return $posts_array;
+}
