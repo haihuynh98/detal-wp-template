@@ -355,3 +355,39 @@ function get_base_url_without_parameters() {
     
     return $base_url;
 }
+
+
+function custom_rewrite_rule() {
+    add_rewrite_rule('^kiem-tra-bao-hanh/([^/]*)/?', 'index.php?post_type=warranty_management&code=$matches[1]', 'top');
+}
+add_action('init', 'custom_rewrite_rule');
+
+function custom_query_vars($vars) {
+    $vars[] = 'code';
+    return $vars;
+}
+add_filter('query_vars', 'custom_query_vars');
+
+function custom_warranty_permalink_structure($post_link, $post) {
+	
+    if (is_object($post) && $post->post_type == 'warranty_management') {
+        // $code = get_post_meta($post->ID, 'warranty_code', true); // Replace 'warranty_code' with the actual meta key
+        if (!empty($post->ID)) {
+            return home_url("/kiem-tra-bao-hanh?code=$post->ID");
+        }
+    }
+    return $post_link;
+}
+add_filter('post_type_link', 'custom_warranty_permalink_structure', 10, 2);
+
+function custom_warranty_redirect() {
+    global $post;
+    if (is_object($post) && $post->post_type == 'warranty_management') {
+        // $code = get_post_meta($post->ID, 'warranty_code', true); // Replace 'warranty_code' with the actual meta key
+        if (!empty($post->ID)) {
+            wp_redirect(home_url("/kiem-tra-bao-hanh?code=$post->ID"), 301);
+            exit;
+        }
+    }
+}
+add_action('template_redirect', 'custom_warranty_redirect');
