@@ -347,3 +347,11 @@ function get_warranty_management_post_by_id($post_id) {
 
     return null;
 }
+
+function get_base_url_without_parameters() {
+    $current_url = esc_url_raw("http" . (!empty($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']);
+    $parsed_url = parse_url($current_url);
+    $base_url = $parsed_url['scheme'] . '://' . $parsed_url['host'] . $parsed_url['path'];
+    
+    return $base_url;
+}

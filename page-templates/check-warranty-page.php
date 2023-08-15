@@ -52,6 +52,9 @@ if (isset($_GET['code']) && $warranty_post == null) {
                         <p>Điện Thoại: <a href="tel:02899959597">028 999 59597</a></p>
                     </div>
                 </div>
+                <div class="other-code text-center mt-5">
+                    <a href="<?= get_base_url_without_parameters()?>" class="pbmit-btn pbmit-btn-outline">Tìm với mã khác</a>
+                </div>
             </div>
         <?php else : ?>
             <div class="col-md-7 col-12">
