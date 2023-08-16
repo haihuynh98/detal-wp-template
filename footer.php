@@ -90,36 +90,23 @@
 					<div class="widget">
 						<h2 class="widget-title">Tin tức mới</h2>
 						<ul class="pbmit-rpw-list">
+                            <?php foreach (get_recent_posts() as $post) : ?>
 							<li>
-								<a href="blog-single.html">
+								<a href="<?= $post['link'] ?>">
 									<span class="pbmit-rpw-img">
-										<img src="<?= get_template_directory_uri() ?>/assets/images/footer-img-01.jpg" class="img-fluid" alt="">
+										<img src="<?= $post['image'] ?>" class="img-fluid" alt="<?= $post['title'] ?>">
 									</span>
 								</a>
 								<span class="pbmit-rpw-content">
 									<span class="pbmit-rpw-title">
-										<a href="blog-single.html">Vệ sinh răng cho trẻ em</a>
+										<a href="<?= $post['link'] ?>"><?= $post['title'] ?></a>
 									</span>
 									<span class="pbmit-rpw-date">
-										<a href="blog-single.html">Ngày 23 tháng 1 năm 2019</a>
+										<a href="<?= $post['link'] ?>"><?= $post['date'] ?></a>
 									</span>
 								</span>
 							</li>
-							<li>
-								<a href="blog-single.html">
-									<span class="pbmit-rpw-img">
-										<img src="<?= get_template_directory_uri() ?>/assets/images/footer-img-02.jpg" class="img-fluid" alt="">
-									</span>
-								</a>
-								<span class="pbmit-rpw-content">
-									<span class="pbmit-rpw-title">
-										<a href="blog-single.html">Cải tiến trong công nghệ</a>
-									</span>
-									<span class="pbmit-rpw-date">
-										<a href="blog-single.html">Ngày 22 tháng 1 năm 2019</a>
-									</span>
-								</span>
-							</li>
+                            <?php endforeach;?>
 						</ul>
 					</div>
 				</div>

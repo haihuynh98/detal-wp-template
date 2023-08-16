@@ -23,33 +23,22 @@ if (isset($_GET['code']) && $warranty_post == null) {
             <div class="col-md-7 col-12">
                 <div class="card" style="width: 100%;">
                     <div class="card-body">
-                        <h5 class="card-title">Thẻ Bảo Hành</h5>
-                        <p class="card-text">Thông Tin Khách Hàng:</p>
-                        <p>Tên: <?= $warranty_post['name'] ?></p>
-                        <p>Địa Chỉ: <?= $warranty_post['address'] ?></p>
-                        <p>Điện Thoại: <?= $warranty_post['phone'] ?></p>
-                        <p>Email: <?= $warranty_post['email'] ?></p>
+                        <h4 class="card-title">Thẻ Bảo Hành</h4>
+                        <h5 class="card-text">Thông Tin Bảo Hành</h5>
+                        <p><b>Tên:</b> <?= $warranty_post['name'] ?></p>
+                        <p><b>Điện Thoại:</b> <?= $warranty_post['phone'] ?></p>
+                        <p><b>Địa Chỉ:</b> <?= $warranty_post['address'] ?></p>
+                        <p><b>Dịch Vụ:</b> <?= $warranty_post['service'] ?></p>
+                        <p><b>Số lượng:</b> <?= $warranty_post['quantity'] ?></p>
+                        <p><b>Thương hiệu:</b> <?= $warranty_post['brand'] ?></p>
+                        <p><b>Giá trị đến:</b> <?= $warranty_post['warranty_period'] ?></p>
                         <hr>
-                        <p class="card-text">Thông Tin Dịch Vụ:</p>
-                        <p>Ngày: <?= $warranty_post['date'] ?></p>
-                        <p>Loại Dịch Vụ: <?= $warranty_post['service'] ?></p>
-                        <p>Chi Tiết: <?= $warranty_post['service_detail'] ?></p>
+                        <h5 class="card-text">Liên Hệ Hỗ Trợ và Bảo Hành</h5>
+                        <p><b>Điện Thoại:</b> <a href="tel:02899959597">028 999 59597</a></p>
                         <hr>
-                        <p class="card-text">Thông Tin Bảo Hành:</p>
-                        <p>Thời Hạn Bảo Hành: <?= $warranty_post['warranty_period'] ?></p>
-                        <p>Phạm Vi Bảo Hành: <?= $warranty_post['warranty_coverage'] ?></p>
-                        <p>Điều Kiện: <?= $warranty_post['conditions'] ?></p>
-                        <hr>
-                        <p class="card-text">Hướng Dẫn Chăm Sóc:</p>
-                        <p><?= $warranty_post['care_instructions'] ?></p>
-                        <hr>
-                        <p class="card-text">Liên Hệ Hỗ Trợ và Bảo Hành:</p>
-                        <p>Điện Thoại: <a href="tel:02899959597">028 999 59597</a></p>
-                        <hr>
-                        <p class="card-text">Thông Tin Phòng Khám Nha Khoa:</p>
-                        <p>Tên Phòng Khám: Trung tâm Nha khoa Quốc tế SGC Dental Center</p>
-                        <p>Địa Chỉ: Số 34, đường Hồ Biểu Chánh, phường 11, quận Phú Nhuận, Tp.HCM</p>
-                        <p>Điện Thoại: <a href="tel:02899959597">028 999 59597</a></p>
+                        <h5 class="card-text">Thông Tin Phòng Khám Nha Khoa</h5>
+                        <p><b>Tên Phòng Khám:</b> Trung tâm Nha khoa Quốc tế SGC Dental Center</p>
+                        <p><b>Địa Chỉ:</b> Số 34, đường Hồ Biểu Chánh, phường 11, quận Phú Nhuận, Tp.HCM</p>
                     </div>
                 </div>
                 <div class="other-code text-center mt-5">

@@ -21,6 +21,16 @@
 
 .warranty-screen .card .card-body .card-text {
     font-weight: bolder;
+    color: var(--pbmit-secondary-color);
+}
+
+.warranty-screen .card .card-body p b {
+    color: var(--pbmit-secondary-color);
+}
+
+.warranty-screen .card .card-body .card-title {
+    font-weight: bolder;
+    color:#4f87fb;
 }
 
 .page-content {

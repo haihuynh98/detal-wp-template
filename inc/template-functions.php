@@ -334,14 +334,10 @@ function get_warranty_management_post_by_id($post_id) {
 			'name'=> get_field('name', $post_id),
 			'address'=> get_field('address', $post_id),
 			'phone'=> get_field('phone', $post_id),
-			'email'=> get_field('email', $post_id),
-			'date'=> get_field('date', $post_id),
 			'service'=> get_field('service', $post_id),
-			'service_detail'=> get_field('service_detail', $post_id),
+			'quantity'=> get_field('quantity', $post_id),
+			'brand'=> get_field('brand', $post_id),
 			'warranty_period'=> get_field('warranty_period', $post_id),
-			'warranty_coverage'=> get_field('warranty_coverage', $post_id),
-			'conditions'=> get_field('conditions', $post_id),
-			'care_instructions'=> get_field('care_instructions', $post_id),
 		];
     }
 
