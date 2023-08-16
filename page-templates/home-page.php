@@ -477,31 +477,29 @@ get_header();
                 </div>
             </div>
             <div class="col-md-12 col-lg-6">
-                <style>
-                    .appoinment-one-img:before {
-                        background-image: url(<?= get_template_directory_uri() . '/assets/images/home-dental/tam-4.jpg' ?>);
-                    }
-                </style>
-                <div class="appoinment-one-img"></div>
-                <div class="pbmit-ihbox-style-3  pbmit-col-stretched-right">
-                    <div class="pbmit-ihbox-box">
-                        <div class="pbmit-ihbox-headingicon d-flex align-items-center">
-                            <div class="pbmit-ihbox-icon">
-                                <div class="pbmit-ihbox-icon-wrapper">
-                                    <i class="pbmit-dentiq-icon pbmit-dentiq-icon-chair"></i>
+                <div class="appoinment-img" style="width: 100%">
+                    <img src="<?= get_template_directory_uri() . '/assets/images/home-dental/tam-4.jpg' ?>" alt="">
+                    <div class="pbmit-ihbox-style-3 appoinment-style">
+                        <div class="pbmit-ihbox-box">
+                            <div class="pbmit-ihbox-headingicon d-flex align-items-center">
+                                <div class="pbmit-ihbox-icon">
+                                    <div class="pbmit-ihbox-icon-wrapper">
+                                        <i class="pbmit-dentiq-icon pbmit-dentiq-icon-chair"></i>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="pbmit-ihbox-contents">
-                                <div class="pbmit-ihbox-subheading">
-                                    <h4 class="vc_custom_heading">ƯU ĐÃI ĐẶC BIỆT</h4>
-                                </div>
-                                <div class="pbmit-ihbox-heading">
-                                    <h2 class="vc_custom_heading">Nhận kiểm tra y tế miễn phí</h2>
+                                <div class="pbmit-ihbox-contents">
+                                    <div class="pbmit-ihbox-subheading">
+                                        <h4 class="vc_custom_heading">ƯU ĐÃI ĐẶC BIỆT</h4>
+                                    </div>
+                                    <div class="pbmit-ihbox-heading">
+                                        <h2 class="vc_custom_heading">Nhận kiểm tra y tế miễn phí</h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
