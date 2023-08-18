@@ -21,13 +21,13 @@
 			<div class="row align-items-center">
 				<div class="col-md-12 col-lg-3">
 					<div class="pbmit-footer-boxes-1">
-						<img class="pbmit-footerlogo" src="<?= get_template_directory_uri()?>/assets/images/logo-white-1.png" alt="">
+						<img class="pbmit-footerlogo" src="<?= get_template_directory_uri() ?>/assets/images/logo-white.png" alt="">
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-6">
 					<form class="pbmit-footer-boxes-2">
-						<input type="email" name="EMAIL" placeholder="Your email address" required="">
-						<button type="submit" value="Sign up">Subscribe</button>
+						<input type="email" name="EMAIL" placeholder="Địa chỉ email của bạn" required="">
+						<button type="submit" value="Sign up">Nhận tin </button>
 					</form>
 				</div>
 				<div class="col-md-12 col-lg-3">
@@ -64,97 +64,65 @@
 			<div class="row">
 				<div class="pbmit-footer-widget-col-1">
 					<div class="widget">
-						<h2 class="widget-title">About Us</h2>
+						<h2 class="widget-title">Về chúng tôi</h2>
 						<div class="textwidget">
-							<p>Contrary to popular belief, Lorem simply random text. It has roots in a piece of
-								classical Latin literature.</p>
+							<p>Trung tâm Nha khoa Quốc tế SGC Dental Center </p>
 						</div>
 						<div class="pbmit-contact-widget-lines">
-							<div class="pbmit-contact-widget-line pbmit-contact-widget-address">Address: 20 ,
-								New York 10010</div>
-							<div class="pbmit-contact-widget-line pbmit-contact-widget-phone">Phone: +880)
-								616481</div>
-							<div class="pbmit-contact-widget-line pbmit-contact-widget-email">Email:
-								info@yourdomain.com</div>
+							<div class="pbmit-contact-widget-line pbmit-contact-widget-address">Địa chỉ: Số 34, đường Hồ Biểu Chánh, phường 11, quận Phú Nhuận, Tp.HCM</div>
+							<div class="pbmit-contact-widget-line pbmit-contact-widget-phone">Điện thoại: <a href="tel:02899959597" style="color:rgba(255,255,255,.9)">028 999 59597</a></div>
 						</div>
 					</div>
 				</div>
 				<div class="pbmit-footer-widget-col-2">
 					<div class="widget">
-						<h2 class="widget-title">COMPANY</h2>
+						<h2 class="widget-title">Thông tin</h2>
 						<div class="textwidget">
 							<ul>
-								<li><a href="about-us-1.html">About Us</a></li>
-								<li><a href="contact-us.html">Company</a></li>
-								<li><a href="blog-classic.html">Press & Blog</a></li>
-								<li><a href="services-details.html">Privacy Policy</a></li>
-								<li><a href="faq.html">Faq</a></li>
+								<li><a href="#">Trang chủ</a></li>
+								<li><a href="#">Dịch vụ</a></li>
+								<li><a href="#">Kiểm tra bảo hành</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="pbmit-footer-widget-col-3">
 					<div class="widget">
-						<h2 class="widget-title">LATEST POST</h2>
+						<h2 class="widget-title">Tin tức mới</h2>
 						<ul class="pbmit-rpw-list">
+                            <?php foreach (get_recent_posts() as $post) : ?>
 							<li>
-								<a href="blog-single.html">
+								<a href="<?= $post['link'] ?>">
 									<span class="pbmit-rpw-img">
-										<img src="<?= get_template_directory_uri()?>/assets/images/footer-img-01.jpg" class="img-fluid" alt="">
+										<img src="<?= $post['image'] ?>" class="img-fluid" alt="<?= $post['title'] ?>">
 									</span>
 								</a>
 								<span class="pbmit-rpw-content">
 									<span class="pbmit-rpw-title">
-										<a href="blog-single.html">Dental Hygiene for Children</a>
+										<a href="<?= $post['link'] ?>"><?= $post['title'] ?></a>
 									</span>
 									<span class="pbmit-rpw-date">
-										<a href="blog-single.html">January 23, 2019</a>
+										<a href="<?= $post['link'] ?>"><?= $post['date'] ?></a>
 									</span>
 								</span>
 							</li>
-							<li>
-								<a href="blog-single.html">
-									<span class="pbmit-rpw-img">
-										<img src="<?= get_template_directory_uri()?>/assets/images/footer-img-02.jpg" class="img-fluid" alt="">
-									</span>
-								</a>
-								<span class="pbmit-rpw-content">
-									<span class="pbmit-rpw-title">
-										<a href="blog-single.html">Improvements In Technology</a>
-									</span>
-									<span class="pbmit-rpw-date">
-										<a href="blog-single.html">January 22, 2019</a>
-									</span>
-								</span>
-							</li>
+                            <?php endforeach;?>
 						</ul>
 					</div>
 				</div>
 				<div class="pbmit-footer-widget-col-4">
 					<div class="widget">
-						<h2 class="widget-title">Opening Hours</h2>
+						<h2 class="widget-title">Giờ mở cửa</h2>
 						<div class="textwidget">
 							<div class="pbmit-timelist-wrapper">
 								<ul class="pbmit-timelist-list">
 									<li>
-										<span class="pbmit-timelist-li-title">Mon – Tue</span>
-										<span class="pbmit-timelist-li-value">10:00 – 18:00</span>
+										<span class="pbmit-timelist-li-title">Thứ 2 – Thứ 7</span>
+										<span class="pbmit-timelist-li-value">8:00 - 20:00</span>
 									</li>
 									<li>
-										<span class="pbmit-timelist-li-title">Wed – Thur</span>
-										<span class="pbmit-timelist-li-value">10:00 – 17:00</span>
-									</li>
-									<li>
-										<span class="pbmit-timelist-li-title">Fri – Sat</span>
-										<span class="pbmit-timelist-li-value">10:00 – 12:30</span>
-									</li>
-									<li>
-										<span class="pbmit-timelist-li-title">Saturday</span>
-										<span class="pbmit-timelist-li-value">10:00 – 12:30</span>
-									</li>
-									<li>
-										<span class="pbmit-timelist-li-title">Sunday</span>
-										<span class="pbmit-timelist-li-value">Closed</span>
+										<span class="pbmit-timelist-li-title">Chủ nhật</span>
+										<span class="pbmit-timelist-li-value">7:30 - 21:00</span>
 									</li>
 								</ul>
 							</div>
@@ -170,7 +138,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="pbmit-footer-copyright-text-area"> Copyright © 2023
-							<a href="index.html">Dentiq Demo1</a>, All Rights Reserved.
+							<a href="/">Detal VN</a>, All Rights Reserved.
 						</div>
 					</div>
 				</div>

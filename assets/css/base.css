@@ -659,7 +659,7 @@ body .pbmit-bg-color-white{
      padding: 0;
 }
  .site-header-menu .logo-img.stickylogo, .site-header-menu.sticky-header .logo-img{
-     max-height: 35px;
+     max-height: 50px;
 }
  .site-header-menu.sticky-header .logo-img.stickylogo{
      display: inline-block;

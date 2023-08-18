@@ -13,53 +13,21 @@ get_header();
 <section class="video-section-one">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 col-lg-4">
-                <div class="video-one-left-box pbmit-bg-color-globalcolor">
-                    <div class="pbmit-ihbox-style-6">
-                        <div class="pbmit-ihbox-box">
-                            <div class="pbmit-ihbox-headingicon d-flex align-items-center">
-                                <div class="pbmit-ihbox-icon">
-                                    <div class="pbmit-ihbox-icon-wrapper">
-                                        <i class="pbmit-dentiq-icon pbmit-dentiq-icon-headset"></i>
-                                    </div>
-                                </div>
-                                <div class="pbmit-heading">
-                                    <div class="pbmit-ihbox-subheading">
-                                        <h4 class="vc_custom_heading">Liên hệ với chúng tôi</h4>
-                                    </div>
-                                    <div class="pbmit-ihbox-heading">0123-456-789</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pbmit-ihbox-contents">
-                                <div class="pbmit-ihbox-content">Chăm Sóc Nụ Cười, Đón Nhận Hạnh Phúc!</div>
-                                <div class="pbmit-ihbox-btn">
-                                    <div class="vc_btn3-container vc_btn3-inline">
-                                        <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-globalcolor" href="contact-us.html" title=""><span>Liên hệ</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-8">
+            <div class="col-md-12 col-lg-12">
                 <div class="video-one-bg">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="video-one-main-box">
-                                <h4>We are Certified Award Winning<br> Hospital in USA.</h4>
+                                <h4><?= get_field('title_above_video') ?></h4>
                                 <div class="video-one-img">
-                                    <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/img-01.jpg" class="img-fluid" alt="">
+                                    <img src="<?= get_field('thumbnail_of_video') ?>" class="img-fluid" alt="">
                                     <div class="video-one-button-bg">
                                         <div class="video-one-play-button">
                                             <span><i class="fa fa-play"></i></span>
-                                            <a href="https://www.youtube.com/watch?v=2s2mctaf26s" class="pbmin-lightbox-video"></a>
+                                            <a href="<?= get_field('video_link_yt') ?>" class="pbmin-lightbox-video"></a>
                                         </div>
                                     </div>
-                                    <div class="video-one-content">
-                                        watch our successfully history
-                                    </div>
+                                    <div class="video-one-content"><?= get_field('description_video') ?></div>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +43,7 @@ get_header();
                                             </div>
                                             <div class="pbmit-heading">
                                                 <div class="pbmit-ihbox-heading">
-                                                    <h2 class="vc_custom_heading">Opening Hours</h2>
+                                                    <h2 class="vc_custom_heading">Giờ hoạt động</h2>
                                                 </div>
                                             </div>
                                         </div>
@@ -85,18 +53,12 @@ get_header();
                                 <div class="pbmit-timelist-ele-wrapper">
                                     <div class="pbmit-timelist-wrapper">
                                         <ul class="pbmit-timelist-list">
-                                            <li>
-                                                <span class="pbmit-timelist-li-title">Monday - Friday</span>
-                                                <span class="pbmit-timelist-li-value">8:00am - 7:00pm</span>
-                                            </li>
-                                            <li>
-                                                <span class="pbmit-timelist-li-title">Saturday</span>
-                                                <span class="pbmit-timelist-li-value">7:30am - 4:00pm</span>
-                                            </li>
-                                            <li>
-                                                <span class="pbmit-timelist-li-title">Sunday</span>
-                                                <span class="pbmit-timelist-li-value">Closed</span>
-                                            </li>
+                                            <?php foreach (get_opening_hours() as $hour) : ?>
+                                                <li>
+                                                    <span class="pbmit-timelist-li-title"><?= $hour['label'] ?></span>
+                                                    <span class="pbmit-timelist-li-value"><?= $hour['hour'] ?></span>
+                                                </li>
+                                            <?php endforeach; ?>
                                         </ul>
                                     </div>
                                 </div>
@@ -116,37 +78,36 @@ get_header();
         <div class="row align-items-center">
             <div class="col-md-12 col-lg-6 ">
                 <div class="pbmit-heading-subheading">
-                    <h4 class="pbmit-subtitle">Who we are</h4>
-                    <h2 class="pbmit-title">The Dental Center National Hospital</h2>
+                    <h4 class="pbmit-subtitle">Về chúng tôi</h4>
+                    <h2 class="pbmit-title">Trung tâm Nha khoa Quốc tế SGC Dental Center</h2>
                     <div class="pbmit-heading-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore t dolore magna aliqua. Ut enim ad minim veniam quis. </p>
+                        <p>Là một trong những nha khoa uy tín nhất tại Hồ Chí Minh. Với sự mệnh là mang đến sự chắc khỏe, thẩm mỹ về răng miệng cho hàng triệu người dân Việt Nam trong và ngoài nước.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
                         <ul class="list-group list-group-borderless">
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Routine and medical care
+                                <i class="fa fa-check"></i> Đội ngũ bác sĩ hơn 15 năm kinh nghiệm
                             </li>
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Excellence in Healthcare every
+                                <i class="fa fa-check"></i> Chuyên viên tư vấn nhiệt tình, chu đáo
                             </li>
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Building a healthy environment.
+                                <i class="fa fa-check"></i> Công nghệ hiện đại - Tiên tiến
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-6">
                         <ul class="list-group list-group-borderless">
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Routine and medical care
+                                <i class="fa fa-check"></i> Chăm sóc răng miệng định kỳ
                             </li>
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Excellence in Healthcare every
+                                <i class="fa fa-check"></i> Thẩm mỹ răng sứ - Trắng sáng tự nhiên
                             </li>
                             <li class="list-group-item">
-                                <i class="fa fa-check"></i> Building a healthy environment.
+                                <i class="fa fa-check"></i> Trồng răng implant - Phục hồi ăn nhai.
                             </li>
                         </ul>
                     </div>
@@ -163,9 +124,9 @@ get_header();
                                     </div>
                                     <div class="pbmit-ihbox-contents">
                                         <div class="pbmit-ihbox-heading">
-                                            <h2 class="vc_custom_heading">25 Years</h2>
+                                            <h2 class="vc_custom_heading">15 Năm</h2>
                                         </div>
-                                        <div class="pbmit-ihbox-content">of Dentist Experience </div>
+                                        <div class="pbmit-ihbox-content">kinh nghiệm chăm sóc răng miệng </div>
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +138,7 @@ get_header();
                                 <div class="pbmit-ihbox-headingicon d-flex">
                                     <div class="pbmit-ihbox-icon">
                                         <div class="pbmit-ihbox-icon-wrapper pbmit-ihbox-icon-type-image">
-                                            <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/icon/signature.jpg" class="img-fluid" alt="">
+                                            <img src="<?= get_template_directory_uri() ?>/assets/images/homepage-1/icon/signature.jpg" class="img-fluid" alt="">
                                         </div>
                                     </div>
                                     <div class="pbmit-ihbox-contents">
@@ -196,7 +157,7 @@ get_header();
             </div>
             <div class="col-md-12 col-lg-6">
                 <div class="about-one-img">
-                    <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/img-02.png" class="img-fluid" alt="">
+                    <img src="<?= get_template_directory_uri() ?>/assets/images/home-dental/tam-2.jpg" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
@@ -208,11 +169,10 @@ get_header();
 <section class="section-lgt service-section-one">
     <div class="container">
         <div class="pbmit-heading-subheading text-center">
-            <h4 class="pbmit-subtitle">OUR SERVICES</h4>
-            <h2 class="pbmit-title">What We Offer for You</h2>
+            <h4 class="pbmit-subtitle">Dịch vụ của chúng tôi</h4>
+            <h2 class="pbmit-title">Những dịch vụ phổ biến tại Nha khoa SGC Dental Center</h2>
             <div class="pbmit-heading-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut<br> labore t dolore magna aliqua. </p>
+                <p>Tại Nha khoa SGC Dental Center, chúng tôi có đầy đủ các dịch vụ từ Điều trị bệnh lý đến Phục hình thẩm mỹ</p>
             </div>
         </div>
         <div class="swiper-slider" data-arrows-class="team3-arrow" data-autoplay="false" data-dots="true" data-arrows="true" data-columns="3" data-margin="30" data-effect="slide">
@@ -225,18 +185,18 @@ get_header();
                                 <div class="pbminfotech-box-content-inner">
                                     <div class="pbmit-service-icon">
                                         <div class="pbmit-service-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-chair"></i>
+                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-insurance"></i>
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">General Dentistry</a>
+                                        <a href="services-details.html">Bọc sứ thẩm mỹ</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Patient can get general treatments with single sitting.</p>
+                                        <p>Giúp răng bạn trắng, sáng, đều hơn mà vẫn đẹp tự nhiên</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc thêm</a>
                                         </div>
                                     </div>
                                 </div>
@@ -252,18 +212,18 @@ get_header();
                                 <div class="pbminfotech-box-content-inner">
                                     <div class="pbmit-service-icon">
                                         <div class="pbmit-service-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-insurance"></i>
+                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-prosthesis"></i>
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Cosmetic Dentistry</a>
+                                        <a href="services-details.html">Trồng răng Implant</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Cosmetic dentistry is make your teeth and smile beautiful.</p>
+                                        <p>Phục hồi chức năng ăn nhai, thẩm mỹ khuôn mặt</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc Thêm</a>
                                         </div>
                                     </div>
                                 </div>
@@ -279,18 +239,18 @@ get_header();
                                 <div class="pbminfotech-box-content-inner">
                                     <div class="pbmit-service-icon">
                                         <div class="pbmit-service-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-prosthesis"></i>
+                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-insurance"></i>
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Dental Implants</a>
+                                        <a href="services-details.html">Dán sứ Veneer</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Dental implants is a procedure of replacing missing teeth.</p>
+                                        <p>Sử dụng công nghệ mới nhất của Đức, bảo tồn răng gốc đến 95%</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc Thêm</a>
                                         </div>
                                     </div>
                                 </div>
@@ -310,15 +270,14 @@ get_header();
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Orthodontics</a>
+                                        <a href="services-details.html">Tẩy trắng răng</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Orthodontics can correct the bite and retore balance to your
-                                            teeth.</p>
+                                        <p>Giúp răng trắng sáng hơn với chi phí phải chăng</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc Thêm</a>
                                         </div>
                                     </div>
                                 </div>
@@ -338,15 +297,14 @@ get_header();
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Teeth Whitening</a>
+                                        <a href="services-details.html">Trám răng</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Laser teeth whitening procedure allows us to whiten your teeth.
-                                        </p>
+                                        <p>Điều trị - Phục hồi răng nhanh chống</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc Thêm</a>
                                         </div>
                                     </div>
                                 </div>
@@ -366,97 +324,14 @@ get_header();
                                         </div>
                                     </div>
                                     <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Teeth Cleaning</a>
+                                        <a href="services-details.html">Nhổ răng khôn</a>
                                     </h3>
                                     <div class="pbmit-service-content">
-                                        <p>Deep cleaning your teeth is a procedure to treat periodontal.</p>
+                                        <p>Sử dụng công nghệ Laser giúp không sưng, không đau,nhức</p>
                                     </div>
                                     <div class="pbmit-service-btn">
                                         <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-slide">
-                    <!-- Slide7 -->
-                    <article class="pbmit-service-style-1">
-                        <div class="pbminfotech-post-item">
-                            <div class="pbminfotech-box-content">
-                                <div class="pbminfotech-box-content-inner">
-                                    <div class="pbmit-service-icon">
-                                        <div class="pbmit-service-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-pills"></i>
-                                        </div>
-                                    </div>
-                                    <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Paradontosis</a>
-                                    </h3>
-                                    <div class="pbmit-service-content">
-                                        <p>Paradontosis involves oral hygiene and professional teeth
-                                            cleaning.</p>
-                                    </div>
-                                    <div class="pbmit-service-btn">
-                                        <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-slide">
-                    <!-- Slide8 -->
-                    <article class="pbmit-service-style-1">
-                        <div class="pbminfotech-post-item">
-                            <div class="pbminfotech-box-content">
-                                <div class="pbminfotech-box-content-inner">
-                                    <div class="pbmit-service-icon">
-                                        <div class="pbmit-service-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-dental-insurance-1"></i>
-                                        </div>
-                                    </div>
-                                    <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Cavity Protection</a>
-                                    </h3>
-                                    <div class="pbmit-service-content">
-                                        <p>Fight cavities with Crest Cavity Protection Toothpaste by us.</p>
-                                    </div>
-                                    <div class="pbmit-service-btn">
-                                        <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-slide">
-                    <!-- Slide9 -->
-                    <article class="pbmit-service-style-1">
-                        <div class="pbminfotech-post-item">
-                            <div class="pbminfotech-box-content">
-                                <div class="pbminfotech-box-content-inner">
-                                    <div class="pbmit-service-icon">
-                                        <div class="pbmit-service-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-girl"></i>
-                                        </div>
-                                    </div>
-                                    <h3 class="pbmit-service-title">
-                                        <a href="services-details.html">Radiographs</a>
-                                    </h3>
-                                    <div class="pbmit-service-content">
-                                        <p>Images of your teeth that your dentist uses to your oral health.
-                                        </p>
-                                    </div>
-                                    <div class="pbmit-service-btn">
-                                        <div class="vc_btn3-container vc_btn3-inline">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Read More</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-right vc_btn3-color-globalcolor" href="services-details.html">Đọc Thêm</a>
                                         </div>
                                     </div>
                                 </div>
@@ -470,186 +345,14 @@ get_header();
 </section>
 <!-- Service End -->
 
-<!-- Counter  Start -->
-<section class="counter-section-one">
-    <div class="container">
-        <div class="counter-one-bg">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="pbminfotech-ele-fid-style-1">
-                        <div class="pbmit-fld-contents d-flex align-items-center">
-                            <div class="pbmit-sbox-icon-wrapper">
-                                <i class="pbmit-dentiq-icon pbmit-dentiq-icon-doctor-1"></i>
-                            </div>
-                            <div class="pbmit-fld-wrap">
-                                <h4 class="pbmit-fid-inner">
-                                    <span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="100" data-interval="5" data-before="" data-before-style="" data-after="" data-after-style="">100</span>
-                                    <span class="pbmit-fid-sub"></span>
-                                </h4>
-                                <h3 class="pbmit-fid-title"><span>Dedicated Doctors<br></span></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="pbminfotech-ele-fid-style-1">
-                        <div class="pbmit-fld-contents d-flex align-items-center">
-                            <div class="pbmit-sbox-icon-wrapper">
-                                <i class="pbmit-dentiq-icon pbmit-dentiq-icon-chair"></i>
-                            </div>
-                            <div class="pbmit-fld-wrap">
-                                <h4 class="pbmit-fid-inner">
-                                    <span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="150" data-interval="5" data-before="" data-before-style="" data-after="" data-after-style="">150</span>
-                                    <span class="pbmit-fid-sub"></span>
-                                </h4>
-                                <h3 class="pbmit-fid-title"><span>Clinic Rooms<br></span></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="pbminfotech-ele-fid-style-1">
-                        <div class="pbmit-fld-contents d-flex align-items-center">
-                            <div class="pbmit-sbox-icon-wrapper">
-                                <i class="pbmit-dentiq-icon pbmit-dentiq-icon-tooth-1"></i>
-                            </div>
-                            <div class="pbmit-fld-wrap">
-                                <h4 class="pbmit-fid-inner">
-                                    <span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="250" data-interval="5" data-before="" data-before-style="" data-after="" data-after-style="">250</span>
-                                    <span class="pbmit-fid-sub"></span>
-                                </h4>
-                                <h3 class="pbmit-fid-title"><span>Awards<br></span></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="pbminfotech-ele-fid-style-1">
-                        <div class="pbmit-fld-contents d-flex align-items-center">
-                            <div class="pbmit-sbox-icon-wrapper">
-                                <i class="pbmit-dentiq-icon pbmit-dentiq-icon-family"></i>
-                            </div>
-                            <div class="pbmit-fld-wrap">
-                                <h4 class="pbmit-fid-inner">
-                                    <span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="1500" data-interval="5" data-before="" data-before-style="" data-after="" data-after-style="">1500</span>
-                                    <span class="pbmit-fid-sub"></span>
-                                </h4>
-                                <h3 class="pbmit-fid-title"><span>Happy Clients<br></span></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Counter End -->
-
-<!-- About us Start -->
-<section class="about-us-section-one section-lgb">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-lg-6"></div>
-            <div class="col-md-12 col-lg-6">
-                <div class="pbmit-heading-subheading">
-                    <h4 class="pbmit-subtitle">Who we are</h4>
-                    <h2 class="pbmit-title">The milestone in excellent health care.</h2>
-                    <div class="pbmit-heading-content">
-                        <p>The Medical Cure program participates in student fairs in select locations. You
-                            can always Book an appointment for upcoming events. You can sign up for free
-                            alerts. </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="pbmit-ihbox-style-4">
-                            <div class="pbmit-ihbox-contents">
-                                <div class="pbmit-ihbox-headingicon d-flex align-items-center">
-                                    <div class="pbmit-ihbox-icon">
-                                        <div class="pbmit-ihbox-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-molar"></i>
-                                        </div>
-                                    </div>
-                                    <div class="pbmit-ihbox-contents">
-                                        <div class="pbmit-ihbox-heading">
-                                            <h2 class="vc_custom_heading">Kids Dentist</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="pbmit-ihbox-style-4">
-                            <div class="pbmit-ihbox-contents">
-                                <div class="pbmit-ihbox-headingicon d-flex align-items-center">
-                                    <div class="pbmit-ihbox-icon">
-                                        <div class="pbmit-ihbox-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-dentist"></i>
-                                        </div>
-                                    </div>
-                                    <div class="pbmit-ihbox-contents">
-                                        <div class="pbmit-ihbox-heading">
-                                            <h2 class="vc_custom_heading">Oral surgery</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="pbmit-ihbox-style-4">
-                            <div class="pbmit-ihbox-contents">
-                                <div class="pbmit-ihbox-headingicon d-flex align-items-center">
-                                    <div class="pbmit-ihbox-icon">
-                                        <div class="pbmit-ihbox-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-dental-insurance-1"></i>
-                                        </div>
-                                    </div>
-                                    <div class="pbmit-ihbox-contents">
-                                        <div class="pbmit-ihbox-heading">
-                                            <h2 class="vc_custom_heading">Crowns</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="pbmit-ihbox-style-4">
-                            <div class="pbmit-ihbox-contents">
-                                <div class="pbmit-ihbox-headingicon d-flex align-items-center">
-                                    <div class="pbmit-ihbox-icon">
-                                        <div class="pbmit-ihbox-icon-wrapper">
-                                            <i class="pbmit-dentiq-icon pbmit-dentiq-icon-braces-1"></i>
-                                        </div>
-                                    </div>
-                                    <div class="pbmit-ihbox-contents">
-                                        <div class="pbmit-ihbox-heading">
-                                            <h2 class="vc_custom_heading">Orthodontics</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="pbmit-btn">READ MORE</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- About us End -->
-
 <!-- Testimonial Start -->
 <section class="section-lg testimonial-one-bg">
     <div class="container">
         <div class="pbmit-heading-subheading text-center">
-            <h4 class="pbmit-subtitle">OUR CLIENTS</h4>
-            <h2 class="pbmit-title">What our Clients say</h2>
+            <h4 class="pbmit-subtitle">KHÁCH HÀNG CỦA CHÚNG TÔI</h4>
+            <h2 class="pbmit-title">Phản hồi của khách hàng về Nha khoa SGC Dental Center</h2>
             <div class="pbmit-heading-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut<br> labore t dolore magna aliqua. </p>
+                <p>Những câu chuyện trải nghiệm của khách hàng trong và ngoài nước khi đến với Nha khoa SGC Dental Center </p>
             </div>
         </div>
         <div class="swiper-slider" data-arrows-class="team3-arrow" data-autoplay="false" data-dots="true" data-arrows="true" data-columns="3" data-margin="30" data-effect="slide">
@@ -661,20 +364,18 @@ get_header();
                             <div class="pbminfotech-box-content">
                                 <div class="pbminfotech-box-desc">
                                     <blockquote class="pbminfotech-testimonial-text">
-                                        <p>The doctors and nurses and aides were excellent. The food was
-                                            excellent. I am feeling fine, back to my old self again and it
-                                            feels great. Thank God for clinics such as yours.</p>
+                                        <p>Cảm ơn đội ngũ bác sĩ, phụ tá và nhân viên đã hỗ trợ trồng răng lại giúp cho 2 vợ chồng tôi. Cảm thấy rất xứng đáng khi lặng lội từ Mỹ về Việt Nam. SGC Dental đúng là nơi trồng răng Implant uy tín</p>
                                     </blockquote>
                                 </div>
                             </div>
                             <div class="pbminfotech-box-img">
                                 <div class="pbmit-featured-wrapper">
-                                    <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/testimonail/testimonial-01.jpg" class="img-fluid" alt="">
+                                    <img src="<?= get_template_directory_uri() ?>/assets/images/phanhoi/phan-hoi-1.png" class="img-fluid" alt="">
                                 </div>
                             </div>
                             <div class="pbminfotech-box-author">
-                                <h3 class="pbminfotech-box-title">Richard Scott</h3>
-                                <span class="pbmit-designation">Dental Implants</span>
+                                <h3 class="pbminfotech-box-title">Vợ chồng chú Hải</h3>
+                                <span class="pbmit-designation">Cấy ghép răng</span>
                             </div>
                         </div>
                     </article>
@@ -686,20 +387,18 @@ get_header();
                             <div class="pbminfotech-box-content">
                                 <div class="pbminfotech-box-desc">
                                     <blockquote class="pbminfotech-testimonial-text">
-                                        <p>A smile adorns a person. I am glad that I can decorate people
-                                            even in this way. Dentistry is not expensive, neglect is Being a
-                                            famous designer is like being a famous dentist.</p>
+                                        <p>Bác sĩ tay nghề rất tốt. Ca răng chỉ hoàn thành trong 48h. Thực sự rất bất ngờ với kết quả. Cho SGC Dental 10đ.</p>
                                     </blockquote>
                                 </div>
                             </div>
                             <div class="pbminfotech-box-img">
                                 <div class="pbmit-featured-wrapper">
-                                    <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/testimonail/testimonial-02.jpg" class="img-fluid" alt="">
+                                    <img src="<?= get_template_directory_uri() ?>/assets/images/phanhoi/phan-hoi-2.png" class="img-fluid" alt="">
                                 </div>
                             </div>
                             <div class="pbminfotech-box-author">
-                                <h3 class="pbminfotech-box-title">Jennifer Smith</h3>
-                                <span class="pbmit-designation">Teeth Whitening</span>
+                                <h3 class="pbminfotech-box-title">Chị Cathy Nguyễn</h3>
+                                <span class="pbmit-designation">Bọc răng sứ</span>
                             </div>
                         </div>
                     </article>
@@ -711,20 +410,18 @@ get_header();
                             <div class="pbminfotech-box-content">
                                 <div class="pbminfotech-box-desc">
                                     <blockquote class="pbminfotech-testimonial-text">
-                                        <p>I appreciate all your kindness and good care you gave me. My
-                                            maintenance treatments have done wonder for me. Thank you so
-                                            much. Please enjoy the chocolates.</p>
+                                        <p>Ban đầu mình muốn bọc sứ, nhưng răng mình đều nên bác sĩ khuyến dán Veneer để bảo tồn răng gốc. Sau 3 ngày thì giờ đây mình đã có 1 bộ răng trắng, sáng, rất nhiên</p>
                                     </blockquote>
                                 </div>
                             </div>
                             <div class="pbminfotech-box-img">
                                 <div class="pbmit-featured-wrapper">
-                                    <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/testimonail/testimonial-03.jpg" class="img-fluid" alt="">
+                                    <img src="<?= get_template_directory_uri() ?>/assets/images/phanhoi/phan-hoi-3.png" class="img-fluid" alt="">
                                 </div>
                             </div>
                             <div class="pbminfotech-box-author">
-                                <h3 class="pbminfotech-box-title">Paul Hill</h3>
-                                <span class="pbmit-designation">Orthodontics</span>
+                                <h3 class="pbminfotech-box-title">Anh Phong Lê</h3>
+                                <span class="pbmit-designation">Dán sứ Veneer</span>
                             </div>
                         </div>
                     </article>
@@ -742,55 +439,67 @@ get_header();
             <div class="col-md-12 col-lg-6">
                 <div class="appoinment-one-bg">
                     <div class="pbmit-heading-subheading">
-                        <h4 class="pbmit-subtitle">GET APPOINTMENT</h4>
-                        <h2 class="pbmit-title">Get the right Dentist<br> Care Book with your Doctor</h2>
+                        <h4 class="pbmit-subtitle">Nhận cuộc hẹn</h4>
+                        <h2 class="pbmit-title">Hãy đặt lịch hẹn với bác sĩ của SGC Dental Center</h2>
                     </div>
                     <form>
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="text" name="your-name" class="form-control" placeholder="Your Name *">
+                                <input type="text" name="your-name" class="form-control" placeholder="Tên (Bắc buộc)">
                             </div>
                             <div class="col-sm-6">
-                                <input type="text" name="phone Number" class="form-control" placeholder="Phone Number">
+                                <input type="text" name="phone Number" class="form-control" placeholder="Số điện thoại (bắt buộc)">
                             </div>
                             <div class="col-sm-6">
-                                <input type="email" name="your-email" class="form-control" placeholder="Your Email *">
+                                <input type="email" name="your-email" class="form-control" placeholder="Số Zalo, Viber (Không bắt buộc)">
                             </div>
                             <div class="col-sm-6">
-                                <input type="text" name="subject" class="form-control" placeholder="Subject">
+                                <select class="form-control" name="service" id="service" style="color: #666; border: 1px solid #ccc; border-radius: 3px; padding: 3px;">
+                                    <option disabled selected>Dịch vụ</option>
+                                    <option value="boc-rang-su">Bọc răng sứ</option>
+                                    <option value="trong-rang-implant">Trồng răng Implant</option>
+                                    <option value="dan-su-veneer">Dán sứ Veneer</option>
+                                    <option value="nieng-rang">Niềng răng</option>
+                                    <option value="nho-rang">Nhổ răng</option>
+                                    <option value="chua-tuy">Chữa Tủy</option>
+                                    <option value="tram-rang">Trám răng</option>
+                                    <option value="cao-voi-rang">Cạo vôi răng</option>
+                                </select>
                             </div>
                             <div>
-                                <textarea name="message" cols="40" rows="5" class="form-control" placeholder="Message"></textarea>
+                                <textarea name="message" cols="40" rows="5" class="form-control" placeholder="Nội dung tư vấn (không bắt buộc)"></textarea>
                             </div>
                             <div>
-                                <button type="submit" class="pbmit-btn pbmit-btn-outline-global">Send
-                                    Message</button>
+                                <button type="submit" class="pbmit-btn pbmit-btn-outline-global">Gửi tin nhắn</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
             <div class="col-md-12 col-lg-6">
-                <div class="appoinment-one-img"></div>
-                <div class="pbmit-ihbox-style-3  pbmit-col-stretched-right">
-                    <div class="pbmit-ihbox-box">
-                        <div class="pbmit-ihbox-headingicon d-flex align-items-center">
-                            <div class="pbmit-ihbox-icon">
-                                <div class="pbmit-ihbox-icon-wrapper">
-                                    <i class="pbmit-dentiq-icon pbmit-dentiq-icon-chair"></i>
+                <div class="appoinment-img" style="width: 100%">
+                    <img src="<?= get_template_directory_uri() . '/assets/images/home-dental/tam-4.jpg' ?>" alt="">
+                    <div class="pbmit-ihbox-style-3 appoinment-style">
+                        <div class="pbmit-ihbox-box">
+                            <div class="pbmit-ihbox-headingicon d-flex align-items-center">
+                                <div class="pbmit-ihbox-icon">
+                                    <div class="pbmit-ihbox-icon-wrapper">
+                                        <i class="pbmit-dentiq-icon pbmit-dentiq-icon-chair"></i>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="pbmit-ihbox-contents">
-                                <div class="pbmit-ihbox-subheading">
-                                    <h4 class="vc_custom_heading">SPECIAL OFFER</h4>
-                                </div>
-                                <div class="pbmit-ihbox-heading">
-                                    <h2 class="vc_custom_heading">Get a free medical checkup</h2>
+                                <div class="pbmit-ihbox-contents">
+                                    <div class="pbmit-ihbox-subheading">
+                                        <h4 class="vc_custom_heading">ƯU ĐÃI ĐẶC BIỆT</h4>
+                                    </div>
+                                    <div class="pbmit-ihbox-heading">
+                                        <h2 class="vc_custom_heading">Nhận kiểm tra y tế miễn phí</h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -800,63 +509,21 @@ get_header();
 <!-- Client Start -->
 <section class="client-section-one section-md">
     <div class="container">
-        <div class="swiper-slider" data-arrows-class="team3-arrow" data-autoplay="false" data-dots="false" data-arrows="true" data-columns="5" data-margin="30" data-effect="slide">
+        <div class="swiper-slider" data-arrows-class="team3-arrow" data-autoplay="false" data-dots="false" data-arrows="true" data-columns="3" data-margin="30" data-effect="slide">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <!-- Slide1 -->
-                    <article class="pbmit-client-style-1">
-                        <div class="pbmit-client-wrapper">
-                            <h4 class="pbmit-hide">Client 6</h4>
-                            <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/client/client-01.png" class="img-fluid" alt="">
+                <?php foreach (get_field('partners') as $partner) : ?>
+                    <div class="swiper-slide">
+                        <!-- Slide1 -->
+                        <article class="pbmit-client-style-1">
+                            <div class="pbmit-client-wrapper">
+                                <h4 class="pbmit-hide"><?= $partner['company_name'] ?></h4>
+                                <div class="pbmit-featured-wrapper">
+                                    <img src="<?= $partner['logo'] ?>" class="img-fluid" alt="">
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-slide">
-                    <!-- Slide2 -->
-                    <article class="pbmit-client-style-1">
-                        <div class="pbmit-client-wrapper">
-                            <h4 class="pbmit-hide">Client 1</h4>
-                            <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/client/client-02.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-slide">
-                    <!-- Slide3 -->
-                    <article class="pbmit-client-style-1">
-                        <div class="pbmit-client-wrapper">
-                            <h4 class="pbmit-hide">Client 2</h4>
-                            <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/client/client-03.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-slide">
-                    <!-- Slide4 -->
-                    <article class="pbmit-client-style-1">
-                        <div class="pbmit-client-wrapper">
-                            <h4 class="pbmit-hide">Client 3</h4>
-                            <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/client/client-04.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-slide">
-                    <!-- Slide5 -->
-                    <article class="pbmit-client-style-1">
-                        <div class="pbmit-client-wrapper">
-                            <h4 class="pbmit-hide">Client 4</h4>
-                            <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/client/client-05.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                        </article>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
@@ -867,119 +534,44 @@ get_header();
 <section class="section-lg">
     <div class="container">
         <div class="pbmit-heading-subheading text-center">
-            <h4 class="pbmit-subtitle">Our Blog</h4>
-            <h2 class="pbmit-title">Read Our Latest Articles</h2>
+            <h4 class="pbmit-subtitle">Tin tức</h4>
+            <h2 class="pbmit-title">Đọc các tin tức mới nhất về Nha khoa SGC</h2>
             <div class="pbmit-heading-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut<br> labore t dolore magna aliqua. </p>
+                <p>Tin tức nơi Nha khoa cung cấp các kiến thức, các phản hồi, các ca răng đã làm tại nha khoa, giúp khách hàng có cái nhìn tổng quan hơn về SGC Dental</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <article class="pbmit-blogbox-style-1">
-                    <div class="post-item">
-                        <div class="pbmit-featured-container">
-                            <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/blog/blog-01.jpg" class="img-fluid" alt="">
+            <?php foreach (get_recent_posts() as $post) : ?>
+                <div class="col-md-4">
+                    <article class="pbmit-blogbox-style-1">
+                        <div class="post-item">
+                            <div class="pbmit-featured-container">
+                                <div class="pbmit-featured-wrapper">
+                                    <img src="<?= $post['image'] ?>" class="img-fluid" alt="<?= $post['title'] ?>">
+                                </div>
                             </div>
-                            <div class="pbmit-meta-category">
-                                <a href="blog-classic.html" rel="category tag">Teeth</a>
-                            </div>
-                        </div>
-                        <div class="pbminfotech-box-content">
-                            <div class="pbmit-meta-container">
-                                <div class="pbmit-meta-date-wrapper pbmit-meta-line">
-                                    <div class="pbmit-meta-date">
-                                        <i class="pbmit-base-icon-calendar-1"></i> 23 Jan, 2019
+                            <div class="pbminfotech-box-content">
+                                <div class="pbmit-meta-container">
+                                    <div class="pbmit-meta-date-wrapper pbmit-meta-line">
+                                        <div class="pbmit-meta-date">
+                                            <i class="pbmit-base-icon-calendar-1"></i> <?= $post['date'] ?>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="pbmit-post-title">
+                                    <a href="<?= $post['link'] ?>"><?= $post['title'] ?></a>
+                                </h3>
+                                <div class="pbminfotech-box-desc">
+                                    <div class="pbminfotech-box-desc-text">
+                                        <p> <?= $post['excerpt'] ?></p>
+                                        <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="<?= $post['link'] ?>">Đọc Thêm</a>
                                     </div>
                                 </div>
                             </div>
-                            <h3 class="pbmit-post-title">
-                                <a href="blog-classic.html">Dental Hygiene for Children</a>
-                            </h3>
-                            <div class="pbminfotech-box-desc">
-                                <div class="pbminfotech-box-desc-text">
-                                    <p> Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-                                        eget lacinia odio sem nec elit. Morbi leo risus, porta ac
-                                        consectetur ac, vestibu lum at eros. Nulla vitae elit libero, a
-                                        pharetra augue. </p>
-                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="blog-classic.html">Read More</a>
-                                </div>
-                            </div>
                         </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-md-4">
-                <article class="pbmit-blogbox-style-1">
-                    <div class="post-item">
-                        <div class="pbmit-featured-container">
-                            <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/blog/blog-02.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="pbmit-meta-category">
-                                <a href="blog-classic.html" rel="category tag">Oral</a>
-                            </div>
-                        </div>
-                        <div class="pbminfotech-box-content">
-                            <div class="pbmit-meta-container">
-                                <div class="pbmit-meta-date-wrapper pbmit-meta-line">
-                                    <div class="pbmit-meta-date">
-                                        <i class="pbmit-base-icon-calendar-1"></i> 22 Jan, 2019
-                                    </div>
-                                </div>
-                            </div>
-                            <h3 class="pbmit-post-title">
-                                <a href="blog-classic.html">Improvements In Technology</a>
-                            </h3>
-                            <div class="pbminfotech-box-desc">
-                                <div class="pbminfotech-box-desc-text">
-                                    <p> Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-                                        eget lacinia odio sem nec elit. Morbi leo risus, porta ac
-                                        consectetur ac, vestibu lum at eros. Nulla vitae elit libero, a
-                                        pharetra augue. </p>
-                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="blog-classic.html">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-md-4">
-                <article class="pbmit-blogbox-style-1">
-                    <div class="post-item">
-                        <div class="pbmit-featured-container">
-                            <div class="pbmit-featured-wrapper">
-                                <img src="<?= get_template_directory_uri()?>/assets/images/homepage-1/blog/blog-03.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="pbmit-meta-category">
-                                <a href="blog-classic.html" rel="category tag">Implants</a>
-                            </div>
-                        </div>
-                        <div class="pbminfotech-box-content">
-                            <div class="pbmit-meta-container">
-                                <div class="pbmit-meta-date-wrapper pbmit-meta-line">
-                                    <div class="pbmit-meta-date">
-                                        <i class="pbmit-base-icon-calendar-1"></i> 20 Jan, 2019
-                                    </div>
-                                </div>
-                            </div>
-                            <h3 class="pbmit-post-title">
-                                <a href="blog-classic.html">You Want Know About Dentist</a>
-                            </h3>
-                            <div class="pbminfotech-box-desc">
-                                <div class="pbminfotech-box-desc-text">
-                                    <p> Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-                                        eget lacinia odio sem nec elit. Morbi leo risus, porta ac
-                                        consectetur ac, vestibu lum at eros. Nulla vitae elit libero, a
-                                        pharetra augue. </p>
-                                    <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-round vc_btn3-style-flat vc_btn3-color-secondarycolor" href="blog-classic.html">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
+                    </article>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>

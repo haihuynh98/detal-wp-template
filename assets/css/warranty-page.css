@@ -1,0 +1,86 @@
+.full-screen {
+    min-height: calc(100vh - 110px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rounded-container {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-check-warranty {
+    display: block;
+    margin: 0 auto;
+}
+
+.warranty-screen .card .card-body .card-text {
+    font-weight: bolder;
+    color: var(--pbmit-secondary-color);
+}
+
+.warranty-screen .card .card-body p b {
+    color: var(--pbmit-secondary-color);
+}
+
+.warranty-screen .card .card-body .card-title {
+    font-weight: bolder;
+    color: #4f87fb;
+}
+
+.page-content {
+    margin: unset;
+    padding-top: 50px;
+}
+
+.error-message {
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+}
+
+.warranty-table table th,
+.warranty-table table td {
+    padding: 10px;
+    color: #020202;
+}
+
+.warranty-table table tr:nth-child(odd) {
+    background-color: #bbdefdb9;
+}
+
+.warranty-table table tr:nth-child(even) {
+    background-color: #63b2f6b9;
+}
+
+.warranty-table table .row-title {
+    background-color: #4473c5 !important;
+}
+
+.warranty-table table .row-title th {
+    color: white !important;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.warranty-table table {
+    border-radius: 20px;
+}
+
+table.rounded-corners {
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+    .page-content {
+        padding-top: 200px;
+    }
+}

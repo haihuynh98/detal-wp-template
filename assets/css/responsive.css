@@ -40,8 +40,8 @@ body {
 	/** Homepage 01 **/
 	.video-one-content {
 		position: absolute;
-		right: -119px;
-		width: 100px;
+		right: -220px;
+		width: 200px;
 		top: 50%;
 		display: inline-block;
 		-webkit-transform: translateY(-50%);
@@ -420,6 +420,13 @@ body {
 }
 
 @media(max-width:991px) {
+	.video-one-main-box h4{
+		text-align: center;
+	}
+
+	.video-one-img img{
+		max-width: 100%;
+	}
     /** Section Padding **/
 	.section-lg {
 		padding-top: 60px;
@@ -442,7 +449,7 @@ body {
 	/** Homepage 01 **/ 
 	.video-section-one{
 		margin-top: 0;
-		padding-top: 70px;
+		padding-top: 20px;
 	}
 	.about-one-img{
 		margin-top: 50px;
@@ -672,6 +679,9 @@ body {
 }
 
 @media(max-width:767px) {
+	.appoinment-one-img{
+		padding: 0;
+	}
 	/** Section Padding **/ 
 	.section-lg{ 
 		padding-top: 60px;
@@ -701,7 +711,7 @@ body {
 	}
 	/** Homepage 01 **/
 	.video-section-one {
-		padding-top: 60px;
+		padding-top: 10px;
 	}
 	.video-one-main-box {
 		padding: 50px 26px 15px 26px;
@@ -1012,4 +1022,17 @@ body {
 	.pbmit-footer-boxes-2 button{
 		padding: 10px 20px;
 	}
+}
+.appoinment-style {
+	position: relative;
+	margin-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 30px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	top: 100%;
+	-webkit-transform: unset;
+	-ms-transform: unset;
+	transform: unset;
+	background-color: var(--pbmit-global-color);
 }

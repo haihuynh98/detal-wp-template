@@ -58,9 +58,9 @@
                 if( columns === 1 ||  columns == 1.6 ){ 
                   var responsive_items = [ /* 1199 : */ columns, /* 991 : */ '1', /* 767 : */ '1', /* 575 : */ '1', /* 0 : */ '1' ];
                 } else if( columns === 2 ||  columns == 2.1  ||  columns == 2.5){ 
-                  var responsive_items = [ /* 1199 : */ columns, /* 991 : */ '2', /* 767 : */ '2', /* 575 : */ '2', /* 0 : */ '1' ];
+                  var responsive_items = [ /* 1199 : */ columns, /* 991 : */ '3', /* 767 : */ '3', /* 575 : */ '2', /* 0 : */ '2' ];
                 } else if( columns === 3 ||  columns == 3.5 ){
-                  var responsive_items = [ /* 1199 : */ columns, /* 991 : */ '2', /* 767 : */ '2', /* 575 : */ '2', /* 0 : */ '1' ];
+                  var responsive_items = [ /* 1199 : */ columns, /* 991 : */ '3', /* 767 : */ '3', /* 575 : */ '2', /* 0 : */ '1' ];
                 } else if( columns === 4||  columns == 4.5 ){
                   var responsive_items = [ /* 1199 : */ columns, /* 991 : */ '4', /* 767 : */ '2', /* 575 : */ '2', /* 0 : */ '1' ];
                 } else if( columns === 5 ){
