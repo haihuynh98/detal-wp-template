@@ -332,6 +332,7 @@ function get_warranty_management_post_by_id($post_id) {
     if ($post && $post->post_type === 'warranty_management') {
         return [
 			'name'=> get_field('name', $post_id),
+			'code'=> $post_id,
 			'address'=> get_field('address', $post_id),
 			'phone'=> get_field('phone', $post_id),
 			'service'=> get_field('service', $post_id),

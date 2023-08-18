@@ -21,28 +21,58 @@ if (isset($_GET['code']) && $warranty_post == null) {
     <div class="row justify-content-center" style="width: 100%;">
         <?php if ($warranty_post) : ?>
             <div class="col-md-7 col-12">
-                <div class="card" style="width: 100%;">
-                    <div class="card-body">
-                        <h4 class="card-title">Thẻ Bảo Hành</h4>
-                        <h5 class="card-text">Thông Tin Bảo Hành</h5>
-                        <p><b>Tên:</b> <?= $warranty_post['name'] ?></p>
-                        <p><b>Điện Thoại:</b> <?= $warranty_post['phone'] ?></p>
-                        <p><b>Địa Chỉ:</b> <?= $warranty_post['address'] ?></p>
-                        <p><b>Dịch Vụ:</b> <?= $warranty_post['service'] ?></p>
-                        <p><b>Số lượng:</b> <?= $warranty_post['quantity'] ?></p>
-                        <p><b>Thương hiệu:</b> <?= $warranty_post['brand'] ?></p>
-                        <p><b>Giá trị đến:</b> <?= $warranty_post['warranty_period'] ?></p>
-                        <hr>
+                <div class="image-warranty">
+                    <img src="<?= get_template_directory_uri() ?>/assets/images/file-the-bao-hanh-2.jpg" alt="">
+                </div>
+                <div class="warranty-table">
+                    <table class="rounded-corners">
+                        <tbody>
+                            <tr class="row-title">
+                                <th colspan="2">Thẻ Bảo Hành</th>
+                            </tr>
+                            <tr>
+                                <th>Mã thẻ</th>
+                                <td><?= $warranty_post['code'] ?></td>
+                            </tr>
+                            <tr>
+                                <th>Tên:</th>
+                                <td><?= $warranty_post['name'] ?></td>
+                            </tr>
+                            <tr>
+                                <th>Giá trị đến:</th>
+                                <td><?= $warranty_post['warranty_period'] ?></td>
+                            </tr>
+                            <tr>
+                                <th>Dịch Vụ:</th>
+                                <td><?= $warranty_post['service'] ?></td>
+                            </tr>
+                            <tr>
+                                <th>Số lượng:</th>
+                                <td><?= $warranty_post['quantity'] ?></td>
+                            </tr>
+                            <tr>
+                                <th>Chủng Loại:</th>
+                                <td><?= $warranty_post['brand'] ?></td>
+                            </tr>
+                            <tr>
+                                <th>Số điện thoại:</th>
+                                <td><?= $warranty_post['phone'] ?></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="subtext">
                         <h5 class="card-text">Liên Hệ Hỗ Trợ và Bảo Hành</h5>
                         <p><b>Điện Thoại:</b> <a href="tel:02899959597">028 999 59597</a></p>
-                        <hr>
+                    </div>
+                    <div class="subtext">
                         <h5 class="card-text">Thông Tin Phòng Khám Nha Khoa</h5>
                         <p><b>Tên Phòng Khám:</b> Trung tâm Nha khoa Quốc tế SGC Dental Center</p>
                         <p><b>Địa Chỉ:</b> Số 34, đường Hồ Biểu Chánh, phường 11, quận Phú Nhuận, Tp.HCM</p>
                     </div>
+
                 </div>
                 <div class="other-code text-center mt-5">
-                    <a href="<?= get_base_url_without_parameters()?>" class="pbmit-btn pbmit-btn-outline">Tìm với mã khác</a>
+                    <a href="<?= get_base_url_without_parameters() ?>" class="pbmit-btn pbmit-btn-outline">Tìm với mã khác</a>
                 </div>
             </div>
         <?php else : ?>
