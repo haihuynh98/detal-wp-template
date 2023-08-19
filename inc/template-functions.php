@@ -326,19 +326,31 @@ function custom_warranty_management_column_data($column, $post_id) {
 }
 add_action('manage_warranty_management_posts_custom_column', 'custom_warranty_management_column_data', 10, 2);
 
-function get_warranty_management_post_by_id($post_id) {
-    $post = get_post($post_id);
+function get_warranty_management_post_by_id($code) {
+    $args = array(
+        'post_type' => 'warranty_management',
+        'posts_per_page' => 1,// Replace with your post type
+        'meta_query' => array(
+            array(
+                'key' => 'code',    // Replace with your meta key
+                'value' => $code,// Replace with your desired meta value
+                'compare' => '=',            // Use '=' for exact match
+            ),
+        ),
+    );
+    $posts = get_posts($args);
+    $post = reset($posts);
 
     if ($post && $post->post_type === 'warranty_management') {
         return [
-			'name'=> get_field('name', $post_id),
-			'code'=> $post_id,
-			'address'=> get_field('address', $post_id),
-			'phone'=> get_field('phone', $post_id),
-			'service'=> get_field('service', $post_id),
-			'quantity'=> get_field('quantity', $post_id),
-			'brand'=> get_field('brand', $post_id),
-			'warranty_period'=> get_field('warranty_period', $post_id),
+			'name'=> get_field('name', $post->ID),
+			'code'=> $code,
+			'address'=> get_field('address', $post->ID),
+			'phone'=> get_field('phone', $post->ID),
+			'service'=> get_field('service', $post->ID),
+			'quantity'=> get_field('quantity', $post->ID),
+			'brand'=> get_field('brand', $post->ID),
+			'warranty_period'=> get_field('warranty_period', $post->ID),
 		];
     }
 
@@ -370,6 +382,10 @@ function custom_warranty_permalink_structure($post_link, $post) {
     if (is_object($post) && $post->post_type == 'warranty_management') {
         // $code = get_post_meta($post->ID, 'warranty_code', true); // Replace 'warranty_code' with the actual meta key
         if (!empty($post->ID)) {
+            $code = get_field('code', $post->ID);
+            if ($code != '') {
+                return home_url("/kiem-tra-bao-hanh?code=$code");
+            }
             return home_url("/kiem-tra-bao-hanh?code=$post->ID");
         }
     }
@@ -382,6 +398,11 @@ function custom_warranty_redirect() {
     if (is_object($post) && $post->post_type == 'warranty_management') {
         // $code = get_post_meta($post->ID, 'warranty_code', true); // Replace 'warranty_code' with the actual meta key
         if (!empty($post->ID)) {
+            $code = get_field('code', $post->ID);
+            if ($code != '') {
+                wp_redirect(home_url("/kiem-tra-bao-hanh?code=$code"), 301);
+                exit;
+            }
             wp_redirect(home_url("/kiem-tra-bao-hanh?code=$post->ID"), 301);
             exit;
         }
