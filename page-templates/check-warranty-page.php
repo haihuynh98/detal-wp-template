@@ -21,22 +21,22 @@ if (isset($_GET['code']) && $warranty_post == null) {
     <div class="row justify-content-center" style="width: 100%;">
         <?php if ($warranty_post) : ?>
             <div class="col-md-7 col-12">
-                <div class="image-warranty">
-                    <img src="<?= get_template_directory_uri() ?>/assets/images/file-the-bao-hanh-2.jpg" alt="">
+                <div class="image-warranty mb-3">
+                    <img style="width: 100%" src="<?= get_template_directory_uri() ?>/assets/images/file-the-bao-hanh-2.jpg" alt="">
                 </div>
                 <div class="warranty-table">
                     <table class="rounded-corners">
                         <tbody>
                             <tr class="row-title">
-                                <th colspan="2">Thẻ Bảo Hành</th>
+                                <th colspan="2">Thông Tin Bảo Hành</th>
                             </tr>
                             <tr>
                                 <th>Mã thẻ</th>
-                                <td><?= $warranty_post['code'] ?></td>
+                                <td><b><?= $warranty_post['code'] ?></b></td>
                             </tr>
                             <tr>
                                 <th>Tên:</th>
-                                <td><?= $warranty_post['name'] ?></td>
+                                <td><b><?= $warranty_post['name'] ?></b></td>
                             </tr>
                             <tr>
                                 <th>Giá trị đến:</th>

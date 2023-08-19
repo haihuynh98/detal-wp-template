@@ -10,6 +10,7 @@
  * @package Detal_VN
  */
 
+$menu_items = get_detal_top_menu();
 ?>
 
 </div>
@@ -79,9 +80,11 @@
 						<h2 class="widget-title">Thông tin</h2>
 						<div class="textwidget">
 							<ul>
-								<li><a href="#">Trang chủ</a></li>
-								<li><a href="#">Dịch vụ</a></li>
-								<li><a href="#">Kiểm tra bảo hành</a></li>
+                                <?php foreach ($menu_items as $menu_item) :?>
+                                    <li class="<?= $menu_item['isCurrent'] ? 'active' : '' ?>">
+                                        <a href="<?= $menu_item['url'] ?>"><?= $menu_item['title'] ?></a>
+                                    </li>
+                                <?php endforeach; ?>
 							</ul>
 						</div>
 					</div>

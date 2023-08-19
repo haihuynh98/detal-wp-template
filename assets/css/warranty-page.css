@@ -51,11 +51,11 @@
 }
 
 .warranty-table table tr:nth-child(odd) {
-    background-color: #bbdefdb9;
+    background-color: rgb(255, 255, 255);
 }
 
 .warranty-table table tr:nth-child(even) {
-    background-color: #63b2f6b9;
+    background-color: rgba(224, 224, 224, 0.73);
 }
 
 .warranty-table table .row-title {

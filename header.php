@@ -9,8 +9,6 @@
  *
  * @package Detal_VN
  */
-
-
 $menu_items = get_detal_top_menu();
 $logo_link = get_custom_logo_link();
 ?>
