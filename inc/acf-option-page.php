@@ -45,11 +45,8 @@ function my_acf_op_init() {
         'icon_url' => '',
         'redirect' => true,
         'post_id' => 'warranty_sheet_settings',
-        'autoload' => false,
+        'autoload' => true,
         'update_button' => 'Update',
         'updated_message' => 'Setting Updated',
     ));
-
-
-
 }
