@@ -17,7 +17,7 @@ function my_acf_op_init() {
         'update_button' => 'Update',
         'updated_message' => 'Contact Updated',
     ));
-    
+
     acf_add_options_page(array(
         'menu_slug' => 'detal-settings',
         'page_title' => 'Detal settings',
@@ -33,5 +33,23 @@ function my_acf_op_init() {
         'update_button' => 'Update',
         'updated_message' => 'Options Updated',
     ));
-    
+
+    acf_add_options_page(array(
+        'menu_slug' => 'warranty-sheet-settings',
+        'page_title' => 'Warranty Sheet settings',
+        'active' => true,
+        'menu_title' => 'Settings',
+        'capability' => 'edit_posts',
+        'parent_slug' => 'edit.php?post_type=warranty_management',
+        'position' => '',
+        'icon_url' => '',
+        'redirect' => true,
+        'post_id' => 'warranty_sheet_settings',
+        'autoload' => false,
+        'update_button' => 'Update',
+        'updated_message' => 'Setting Updated',
+    ));
+
+
+
 }
